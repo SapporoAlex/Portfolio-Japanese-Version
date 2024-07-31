@@ -1,67 +1,62 @@
 body {
     background-color: rgb(255, 255, 255); /* Fixed the background color syntax */
     margin: 0; /* Ensure no default margin */
-    font-family: Arial, sans-serif; /* Example font-family for better appearance */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .nav-bar {
     position: fixed;
-    left: 0;
+    top: 0;
     width: 15vw;
     height: 100%;
-    background-color: rgb(100, 100, 100);
-    color: rgb(255, 255, 255);
+    padding: 20px;
+    gap: 20px;
+    color: rgba(0, 0, 0, 0.61);
     display: flex;
-    flex-direction: column; /* Ensures vertical stacking of items */
-	top: 0;
-}
-
-.nav-bar-list {
-    list-style-type: none; /* Removes the default bullet points */
-    padding: 0;
-    margin: 0;
-}
-
-.nav-bar-list li {
-    padding: 15px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 20px;
-}
-
-.nav-bar-list i {
-    font-size: 25px; /* Adjusts icon size */
-    color: rgb(255, 255, 255);
-    margin-right: 10px; /* Adds spacing between icon and text */
-	padding: 10px;
-}
-
-.nav-bar-list li a {
-    color: rgb(255, 255, 255); /* Ensures text inside links is white */
-    text-decoration: none; /* Removes underline from links */
-    display: flex;
-    align-items: center; /* Vertically centers items within links */
+    flex-direction: row;
+    font-size: 40px;
 }
 
 .main-section {
-    margin-left: 15vw; /* Ensures it starts after the nav-bar */
-    padding: 20px; /* Adds padding around the main section */
-    width: calc(100% - 15vw); /* Takes up the remaining width of the viewport */
+    width: calc(90%); /* Takes up the remaining width of the viewport */
     box-sizing: border-box; /* Ensures padding is included in the element’s width and height */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(0, 60, 255);
+    color: rgb(255, 255, 255);
 }
 
 .about {
-    margin: 20px; /* Simplified margins */
     display: flex;
-    justify-content: center; /* Center items horizontally if they are not taking full width */
-    background-color: #fff; /* White background for the box */
-    padding: 20px; /* Space inside the box */
-    border-radius: 8px; /* Rounded corners for the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: rgb(2, 0, 124);
+    flex-direction: row;
+    justify-content: space-evenly; /* Center items horizontally if they are not taking full width */
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.about-text {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #profile-image img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
     width: auto;
     height: auto;
     border-radius: 50%;
@@ -69,23 +64,61 @@ body {
 }
 
 .qualifications-tools {
+    margin-top: 30px;
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
-#box {
-    margin: 20px;
-    display: flex;
-    align-items: center; /* Vertically centers items within links */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgb(0, 107, 89);
-    color: rgb(255, 255, 255);
-}
 
 .project-box {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+}
+
+#project-image {
+    display: flexbox;
+    flex-direction: column;
+    padding: 30px;
+    }
+
+/* 
+.project-1 {
+
+}
+.project-2 {
+
+}
+.project-3 {
+
+}
+.project-4 {
+
+}
+.project-5 {
+
+}
+.project-6 {
+
+} */
+
+.project-name {
+
+}
+
+.project-box {
+
+}
+
+.project-img {
+
+}
+
+.project-desciption {
+
+}
+
+.tools {
+
 }

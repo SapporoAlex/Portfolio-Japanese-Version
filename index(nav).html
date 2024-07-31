@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/styles(nav).css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Alex McKinley</title>
 </head>
 <body>
 <header>
     <div class="nav-bar">
-        <a href="https://github.com/SapporoAlex" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/alex-mckinley-257266296/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <ul class="nav-bar-list">
+            <li id="about">About</li>
+            <li id="projects">Projects</li>
+            <li id="testimonials">Testimonials</li>
+            <li id="tutoring">Tutoring</li>
+            <li id="contact">Contact</li>
+            <li id="links">
+                <a href="https://github.com/SapporoAlex" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/alex-mckinley-257266296/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </li>
+        </ul>
     </div>
 </header>
 <div class="main-section">
-    <div class="about" id="about-box">
+    <div class="about" id="box">
 
         <div id="profile-image">
         <img src="static/profile.png">
         </div>
 
-        <div class="about-text">
-            <h1>Alex McKinley - Programmer</h1>
-        <p id="about-section">I am a programmer based in Sapporo Hokkaido. I began programming in 2023, and since then I have completed projects that are currently used by several Japanese companies to increase workflow, and give up to date insights to stakeholders. I work with companies to find IT solutions including automation, webscraping, data analysis, web development, and tutoring.</p>
-            
+    <div class="about-text">
+        <h1>Alex McKinley - Programmer</h1>
+    <p id="about-section">I am a programmer based in Sapporo Hokkaido. I began programming in 2023, and since then I have completed projects that are currently used by several Japanese companies to increase workflow, and give up to date insights to stakeholders. I work with companies to find IT solutions including automation, webscraping, data analysis, web development, and tutoring.</p>
         <div class="qualifications-tools">
+
             <div class="qualifications">
             <h2>Qualifications</h2>
                 <ul>
@@ -38,7 +47,7 @@
             </div>
 
             <div class="tools">
-                <h2>Languages & Tools</h2>
+            <h2>Languages & Tools</h2>
                 <ul>
                 <li>Python</li>
                 <li>Django</li>
@@ -54,108 +63,27 @@
 
 </div>
 
-<h1>Data Analysis</h1>
+
 <div class="project-1" id="box">
     <div class="project-name">
-        <h1>Earnings Data Collecting, Cleaning, and visualisation</h1>    
+        <h1>Automated Earnings Report</h1>    
     </div>
     <div class="project-box">
 
         <div class="project-img">
-            <img src="static/1.jpg" width="30%" height="auto">
-            <img src="static/3.jpg" width="20%" height="auto">
-            <img src="static/2.jpg" width="60%" height="auto">
-
+            <img src="">
         </div>
+
         <div class="project-desciption">
             <p>Description of project.</p>
         </div>
-        <div class="tools">
-            <p>Python, Pandas, Playwright</p>
-        </div>
+        <p>Python, Pandas, Playwright</p>
     </div>
 </div>
 
 <div class="project-2" id="box">
     <div class="project-name">
-        <h1>KPI Tracker</h1>    
-    </div>
-    <div class="project-box">
-
-        <div class="project-img">
-            <img src="static/4.jpg" width="30%" height="auto">
-        </div>
-
-        <div class="project-desciption">
-            <p></p>
-        </div>
-        <div class="tools">
-            <p>Python, Pandas, Playwright</p>
-        </div>
-    </div>
-</div>
-<h1>Software Development</h1>
-<div class="project-3" id="box">
-    <div class="project-name">
-        <h1>Time Card App</h1>    
-    </div>
-    <div class="project-box">
-
-        <div class="project-img">
-            <img src="static/5.jpg" width="45%" height="auto">
-            <img src="static/6.jpg" width="23%" height="auto">
-        </div>
-
-        <div class="project-desciption">
-            <p></p>
-        </div>
-        <div class="tools">
-            <p>Python, Pandas, Playwright</p>
-        </div>
-    </div>
-</div>
-<h1>Game development</h1> 
-<div class="project-4" id="box">
-    <div class="project-name">
-        <h1>African President</h1>    
-    </div>
-    <div class="project-box">
-
-        <div class="project-img">
-            <img src="static/7.jpg" width="50%" height="auto">
-        </div>
-
-        <div class="project-desciption">
-            <p></p>
-        </div>
-        <div class="tools">
-            <p>Python, Pandas, Playwright</p>
-        </div>
-    </div>
-</div>
-
-<div class="project-5" id="box">
-    <div class="project-name">
-        <h1>Hammy Stop</h1>    
-    </div>
-    <div class="project-box">
-
-        <div class="project-img">
-            <img src="static/8.jpg" width="50%" height="auto">
-        </div>
-
-        <div class="project-desciption">
-            <p></p>
-        </div>
-        <div class="tools">
-            <p>Python, Pandas, Playwright</p>
-        </div>
-    </div>
-</div>
-<h1>Teaching</h1> 
-<div class="project-6" id="box">
-    <div class="project-name">
-        <h1>Summer Python Course</h1>    
+        <h1></h1>    
     </div>
     <div class="project-box">
 
@@ -166,10 +94,70 @@
         <div class="project-desciption">
             <p></p>
         </div>
-        <div class="tools">
-            <p>Python, Pandas, Playwright</p>
+    </div>
+</div>
+
+<div class="project-3" id="box">
+    <div class="project-name">
+        <h1></h1>    
+    </div>
+    <div class="project-box">
+
+        <div class="project-img">
+            <img src="">
         </div>
-        
+
+        <div class="project-desciption">
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<div class="project-4" id="box">
+    <div class="project-name">
+        <h1></h1>    
+    </div>
+    <div class="project-box">
+
+        <div class="project-img">
+            <img src="">
+        </div>
+
+        <div class="project-desciption">
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<div class="project-5" id="box">
+    <div class="project-name">
+        <h1></h1>    
+    </div>
+    <div class="project-box">
+
+        <div class="project-img">
+            <img src="">
+        </div>
+
+        <div class="project-desciption">
+            <p></p>
+        </div>
+    </div>
+</div>
+
+<div class="project-6" id="box">
+    <div class="project-name">
+        <h1></h1>    
+    </div>
+    <div class="project-box">
+
+        <div class="project-img">
+            <img src="">
+        </div>
+
+        <div class="project-desciption">
+            <p></p>
+        </div>
     </div>
 </div>
 
