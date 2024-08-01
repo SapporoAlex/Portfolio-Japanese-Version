@@ -261,3 +261,97 @@ ul {
     border-radius: 10px;
     padding: 5px;
 }
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    #name {
+        font-size: 50px;
+    }
+    
+    #title {
+        font-size: 30px;
+    }
+
+    .about-me {
+        padding: 50px;
+        margin-top: 100px;
+        font-size: 24px;
+    }
+
+    .qualifications-tools {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .category-title {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .project-description, #subtitle, #description-text {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .tools, .github-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .github-links a, .tools p {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .contact {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .contact li a {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #name {
+        font-size: 40px;
+    }
+
+    #title {
+        font-size: 24px;
+    }
+
+    .about-me {
+        padding: 30px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    .qualifications-tools {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .category-title {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .project-description, #subtitle, #description-text {
+        font-size: 16px;
+    }
+
+    .tools, .github-links {
+        font-size: 16px;
+    }
+
+    .contact {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .contact li a {
+        font-size: 24px;
+    }
+}
