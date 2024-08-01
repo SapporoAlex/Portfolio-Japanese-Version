@@ -63,19 +63,19 @@ ul {
 .about-me {
     background-color: darkolivegreen;
     color: white;
-    font-size: 18px;
+    font-size: 20em;
     padding: 50px;
     margin-top: 50px;
 }
 
 .qualifications-tools {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     background-color: cadetblue;
     color: white;
     padding: 40px;
-    font-size: 18px;
+    font-size: 20em;
 }
 
 .qualifications-tools div {
@@ -178,7 +178,7 @@ ul {
 
 .project-description {
     width: 90%;
-    font-size: 16px;
+    font-size: 20em;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -201,7 +201,7 @@ ul {
 
 #description-text {
     width: 90%;
-    font-size: 16px;
+    font-size: 20em;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -216,7 +216,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    font-size: 14px;
+    font-size: 18em;
     flex-wrap: wrap;
     margin: 10px 0;
 }
@@ -226,7 +226,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    font-size: 14px;
+    font-size: 18em;
     list-style-type: none;
     padding: 0;
     margin: 10px 0;
@@ -240,7 +240,7 @@ ul {
     padding: 5px;
     border: 2px solid aliceblue;
     color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 18em;
 }
 
 #links {
