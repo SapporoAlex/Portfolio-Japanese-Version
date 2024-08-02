@@ -10,10 +10,6 @@ img {
     height: auto;
 }
 
-header, .main-section, .category-title, .contact {
-    padding: 20px;
-}
-
 a {
     text-decoration: none;
 }
