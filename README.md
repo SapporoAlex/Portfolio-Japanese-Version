@@ -1,1 +1,5 @@
-https://sapporoalex.github.io/Portfolio-Japanese-Version/
+## 個人ポートフォリオ・ページ
+
+私の日本語ポートフォリオサイトへようこそ。私のGitHubページは英語なので、日本語で読みたい人のために、私のベスト作品を簡潔にまとめたものを作りました。私のポートフォリオをご覧いただきありがとうございます。
+
+<a href="https://sapporoalex.github.io/Portfolio-Japanese-Version/">こちらをご覧ください</a>
