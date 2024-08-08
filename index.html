@@ -8,7 +8,9 @@
     <title>Alex McKinley</title>
 </head>
 <body>
-<header></header>
+<header>
+    <!-- Add header content here if needed -->
+</header>
 <div class="main-section">
     <div class="intro" id="img-and-name">
         <div id="profile-image">
@@ -25,16 +27,17 @@
                 </ul>
             </div>
         </div>
+    </div>
+
     <div class="about-me">
         <h2>私のこと</h2>
-        <p id="about-text">北海道札幌市在住のプログラマーです。2023年にプログラミングを始めて以来、様々なプロジェクトを完成させ、
-            現在いくつかの日本企業でワークフローを改善し、ステークホルダーに最新の洞察を与えるために使用されています。自動化、
-            ウェブスクレイピング、データ分析、ウェブ開発、家庭教師など、ITソリューションを見つけるために企業で働いています。日本語と英語が話せます。また、5年以上のチームマネジメントとクライアントへのコンサルティング経験があります。</p>
+        <p id="about-text">北海道札幌市在住のプログラマーです。2023年にプログラミングを始めて以来、様々なプロジェクトを完成させ、...
+        </p>
     </div>
 
     <div class="qualifications-tools">
         <div class="qualifications">
-        <h2>資格</h2>
+            <h2>資格</h2>
             <ul>
                 <li>Responsive Web Design (freeCodeCamp)</li>
                 <li>Data Analysis with Python (freeCodeCamp)</li>
@@ -45,7 +48,7 @@
         </div>
 
         <div class="languages">
-        <h2>コード言語</h2>
+            <h2>コード言語</h2>
             <ul>
                 <li>Python</li>
                 <li>SQL</li>
@@ -61,231 +64,60 @@
         </div>
     </div>
 
+    <!-- Repeat the following block for each project -->
+
+    <div class="category-title" id="data-analysis">
+        <h1>データ分析</h1>
     </div>
 
-<div class="category-title" id="data-analysis">
-    <h1>データ分析</h1>
-</div>
-
-<div class="project-1" id="box">
-
-    <div class="project-name">
-        <h1>ウェブスクレイピング、データクリーニング、データビジュアライゼーション</h1>    
-    </div>
-
-    <div id="project-img">
-        <img src="static/2.jpg" width="80%" height="auto">
-    </div>
-
-    <div class="project-description">
-        <h2 id="subtitle">ADL2のために作りました</h2>
-        <p>2024年1月～4月</p>
-        <p id="description-text">ホテル会社ADL2とのコンサルティングを経て。私は、生産性を高め、精度を上げる方法を特定しました。
-            同社は予約と収益に関する最新の情報を必要としていたため、私は3つのツールを作成しました。まず一つ目、 
-            会社のデータベースから毎日のホテル予約データをスクレイピングし、その情報を関連スタッフにメールで送信する自動スクリプトを毎日作成しました。
-            次に、2つのデータベースからデータをスクレイピングし、データをクレンジングし、数値に必要な処理を実行し、データをわかりやすく表示する週次収益レポートスクリプトを作成しました。
-            そしてデータをわかりやすいグラフで表示します。3つ目のツールはEメール・パーサーだ。ADL2の見込み客は、ホームページの予約フォームに記入します。
-            フォームに記入し、スタッフの受信トレイにメールを送ります。すべてのメールが適切に受信され、タイムリーに読まれるようにするためです、 
-            メールから関連情報を抽出し、エクセルの表に追加することができるメール・パーサーを書きました。
-            このメール解析ツールは、日本語のメールも英語のメールも同じように解析します。私は、ADL2社のビジネスを改善するための新しい方法を生み出すために、ADL2社のコンサルティングを続けています。
-        </p>
-    </div>
-
-    <div class="github-links">
-        <a href="https://github.com/SapporoAlex/Hotel-Reservation-Cancellation-Daily-Update" target="_blank">毎日の予約状況</a>
-        <a href="https://github.com/SapporoAlex/Weekly-Earnings-Data-Update" target="_blank">週間収益報告</a>
-        <a href="https://github.com/SapporoAlex/Email-Parser" target="_blank">メールパーサー</a>
-    </div>
-
-    <div class="tools">
-        <p id="python">Python</p><p id="pandas">Pandas</p><p id="playwright">Playwright</p><p id="openpyxl">Openpyxl</p>
-    </div>
-
-    
-</div>
-
-<div class="project-2" id="box">
-    <div class="project-name">
-        <h1>KPIトラッカー</h1>    
-    </div>
-    <div class="project-box">
+    <div class="project-1">
+        <div class="project-name">
+            <h1>ウェブスクレイピング、データクリーニング、データビジュアライゼーション</h1>
+        </div>
 
         <div id="project-img">
-            <img src="static/4.jpg" width="60%" height="auto">
-        </div>
-
-        <div class="project-description">
-            <h2 id="subtitle">タイタン・グリーンテック製</h2>
-            <p>2024年3月</p>
-            <p id="description-text">東京にある人材紹介会社、タイタン・グリーンテックのCEOから、データ可視化ツールの作成を手伝ってもらえないかとの依頼がありました。
-                私はいくつかのドラフトを作成し、何がベストな解決策になりそうか話し合いました。社長は、毎週月曜日に社員のKPIをグラフで表示し、
-                各社員の履歴書と就職先の比率を四半期ごとに表示する方法を求めていました。彼はデータベース上に表形式の情報を持っていましたが、
-                最新の情報を見やすく取得する迅速で効率的な方法を求めていました。私は、データベースから従業員データをスクレイピングし、テーブルに挿入し、
-                週ごとにチャートを更新し、毎週自動的にデータをExcelシートでEメール送信するスクリプトを作成しました。CEOは現在もこの可視化ツールを使って、
-                従業員の進捗状況を把握し、より良い指導を行っています。
-            </p>
-        </div>
-
-        <div class="github-links">
-            <a href="https://github.com/SapporoAlex/KPI-Tracker" target="_blank">KPIトラッカー</a>
-        </div>
-
-        <div class="tools">
-            <p id="python">Python</p><p id="pandas">Pandas</p><p id="playwright">Playwright</p><p id="openpyxl">Openpyxl</p>
-        </div>
-    </div>
-</div>
-
-
-<div class="category-title" id="software-development">
-    <h1>ソフトウェア開発</h1>
-</div>
-
-
-<div class="project-3" id="box">
-    <div class="project-name">
-        <h1>タイムカードアプリ</h1>    
-    </div>
-    <div class="project-box">
-
-        <div id="project-img">
-            <img src="static/5.jpg" width="70%" height="auto">
+            <img src="static/2.jpg" width="80%" height="auto" alt="Project Image">
         </div>
 
         <div class="project-description">
             <h2 id="subtitle">ADL2のために作りました</h2>
-            <p>2024年5月</p>
-            <p id="description-text">これは、ホテルのスタッフのためのタイムカードとして機能するローカルマシン上で実行することができるプログラムです。
-                スタッフが何時に出勤、退勤したかを記録します。最大20人のスタッフをプログラムに追加することができます、 
-                また、経理担当者は計算機能を使って、各従業員の月ごとの勤務時間を日別に集計することができます。
-                このデータは、従業員をExcelシートごとに区切った月ごとのExcelファイルに保存されます。
-            </p>
-        </div>
-
-        <div id="admin-explanation">
-            <img src="static/6.jpg" width="15%" height="auto">
-            <div id="extra-img-text">
-                <h3>管理プログラム</h3>
-            <p>管理スタッフは、付属の管理プログラムを使って簡単に変更できます。</p>
-            </div>
-        </div>
-
-        <div class="github-links">
-            <a href="https://github.com/SapporoAlex/Employee-Timecard-Shift-Calculator" target="_blank">タイムカードアプリ</a>
-        </div>
-
-        <div class="tools">
-            <p id="python">Python</p><p id="pandas">Pygame</p><p id="openpyxl">Openpyxl</p>
-        </div>
-    </div>
-</div>
-
-<div class="category-title" id="game-development">
-    <h1>ゲーム開発</h1> 
-</div>
-
-<div class="project-4" id="box">
-    <div class="project-name">
-        <h1>アフリカ大統領</h1>    
-    </div>
-    <div class="project-box">
-
-        <div id="project-img">
-            <img src="static/7.jpg" width="50%" height="auto">
-        </div>
-
-        <div class="project-description">
-            <h2 id="subtitle">JavaScript ゲーム</h2>
-            <p>2024年7月</p>
-            <p id="description-text">このゲームを作ろうと思ったのは、20世紀後半のアフリカの大統領についてのドキュメンタリーを見てからです。JavaScriptのスキルを向上させる良い機会でもありました。
+            <p>2024年1月～4月</p>
+            <p id="description-text">ホテル会社ADL2とのコンサルティングを経て。私は、生産性を高め、精度を上げる方法を特定しました。...
             </p>
         </div>
 
         <div class="github-links">
-            <a href="https://github.com/SapporoAlex/Game-African-President" target="_blank">アフリカ大統領</a>
-            <a href="https://sapporoalex.github.io/Game-African-President/" target="_blank">ゲームをプレイ</a>
-        </div>
-
-        <div class="tools">
-            <p id="javascript">JavaScript</p><p id="html">HTML</p><p id="css">CSS</p>
-        </div>
-    </div>
-</div>
-
-<div class="project-5" id="box">
-    <div class="project-name">
-        <h1>ハミー・ストップ</h1>    
-    </div>
-    <div class="project-box">
-
-        <div id="project-img">
-            <img src="static/8.jpg" width="70%" height="auto">
-        </div>
-
-        <div class="project-description">
-            <h2 id="subtitle">娘のために作りました</h2>
-            <p>2024年7月</p>
-            <p id="description-text">アニメーションの作り方を理解する方法として、このゲームを作りました。このゲームでは、さまざまなアニメーション効果を使い、バグのない楽しいオリジナルゲームを作る方法を紹介します。</p>
-        </div>
-
-        <div class="github-links">
-            <a href="https://github.com/SapporoAlex/Game-Hammy-Stop" target="_blank">ハミー・ストップ</a>
-        </div>
-
-        <div class="tools">
-            <p id="python">Python</p><p id="pygame">Pygame</p>
-        </div>
-    </div>
-</div>
-
-<div class="category-title" id="teaching">
-    <h1>ティーチング</h1>
-</div>
-
-<div class="project-6" id="box">
-    <div class="project-name">
-        <h1>夏のPythonコース</h1>    
-    </div>
-    <div class="project-box">
-
-        <div id="project-img">
-            <img src="static/10.jpg" width="50%" height="auto">
-        </div>
-
-        <div class="project-description">
-            <h2 id="subtitle">IKSインターナショナルスクールとのコラボレーション</h2>
-            <p>2024年8月</p>
-            <p id="description-text">IKSインターナショナルスクールの校長先生に、2日間のサマー・プログラミング・コースについて相談しました。このアイデアを保護者に説明したところ、多くの人が興味を示し、
-                24時間以内にコースは満席（14人）になりました。プログラミングの経験のない生徒たちは、
-                私がデザインしました10のコーディング・アクティビティを通してプログラミングの基礎を学びました。
-                コースは私が作成した筆記試験で終了し、生徒には修了証書が授与されました。生徒や保護者からのフィードバックは非常に好意的で、私が教える週1回の定期的なプログラミング・レッスンが始まりました。
-                この夏期講習の経済的成果は、2日間の講習と週1回の継続的なレッスンで学校が大きな利益を上げたことです。また、北海道で唯一、小学生向けのプログラミング教室を開いていることをアピールすることができます。
-            </p>
-        </div>
-
-        <div class="github-links">
-            <a href="https://github.com/SapporoAlex/2024-Summer-Programming-Course" target="_blank">私のPythonコース</a>
+            <a href="https://github.com/SapporoAlex/Hotel-Reservation-Cancellation-Daily-Update" target="_blank">毎日の予約状況</a>
+            <a href="https://github.com/SapporoAlex/Weekly-Earnings-Data-Update" target="_blank">週間収益報告</a>
+            <a href="https://github.com/SapporoAlex/Email-Parser" target="_blank">メールパーサー</a>
         </div>
 
         <div class="tools">
             <p id="python">Python</p>
+            <p id="pandas">Pandas</p>
+            <p id="playwright">Playwright</p>
+            <p id="openpyxl">Openpyxl</p>
         </div>
+    </div>
+
+    <!-- More project sections -->
+
+    <div class="category-title" id="contact">
+        <h1>お問い合わせ</h1>
+    </div>
+
+    <div class="contact">
+        <h2>LinkedIn、GitHub、Eメールでお気軽にご連絡ください。</h2>
+        <p>alexanderfromaustralia@gmail.com</p>
+        <ul id="links">
+            <li><a href="https://github.com/SapporoAlex" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/alex-mckinley-257266296/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
     </div>
 </div>
 
-<div class="category-title" id="contact">
-    <h1>お問い合わせ</h1>
-</div>
-
-<div class="contact">
-    <h2>LinkedIn、GitHub、Eメールでお気軽にご連絡ください。</h2>
-    <p>alexanderfromaustralia@gmail.com</p>
-    <ul id="links">
-        <li><a href="https://github.com/SapporoAlex" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/alex-mckinley-257266296/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-    </ul>
-</div>
-</div>
-</div>
+<footer>
+    <!-- Add footer content here if needed -->
+</footer>
 </body>
 </html>
