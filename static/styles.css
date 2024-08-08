@@ -47,6 +47,15 @@ ul {
     align-items: center;
 }
 
+#email {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color:rgb(19, 0, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact-top {
     background-color: rgb(255, 255, 255);
     font-size: 25px;
@@ -283,6 +292,10 @@ ul {
         font-size: 24px;
     }
 
+    #email {
+        font-size: 24px;
+    }
+
     .about-me {
         padding: 30px;
         font-size: 16px;
@@ -346,6 +359,10 @@ ul {
     }
 
     #title {
+        font-size: 20px;
+    }
+
+    #email {
         font-size: 20px;
     }
 
