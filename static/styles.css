@@ -47,6 +47,14 @@ ul {
     align-items: center;
 }
 
+.contact-top li a {
+    color:rgb(19, 0, 128));
+    font-size: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
 .intro {
     display: flex;
     flex-direction: column;
