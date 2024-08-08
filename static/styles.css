@@ -152,6 +152,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 #box {
@@ -313,6 +314,7 @@ ul {
 
     .contact {
         font-size: 16px;
+        padding-bottom: 5px;
     }
 
     #admin-explanation {
@@ -376,6 +378,11 @@ ul {
         font-size: 16px;
     }
 
+    .contact {
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    
     #admin-explanation {
         font-size: 14px;
     }
