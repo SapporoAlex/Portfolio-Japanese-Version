@@ -69,7 +69,7 @@ let currentLanguage = "Japanese"
 languageBtn.addEventListener('click', () => {
     if (currentLanguage === "Japanese") {
         currentLanguage = "English"
-        languageBtn.textContent = "ENGLISH"
+        languageBtn.textContent = "日本語"
         myName.textContent = "Alex McKinley"
         myTitle.textContent = "Programmer, Data Analyst"
         aboutMeTitle.textContent = "About me"
@@ -120,7 +120,7 @@ languageBtn.addEventListener('click', () => {
         contactInfo.textContent = "Feel free to contact me via LinkedIn, GitHub, or Email"
     } else if (currentLanguage === "English") {
         currentLanguage = "Japanese"
-        languageBtn.textContent = "日本語"
+        languageBtn.textContent = "English"
         myName.textContent = "アレックス・マッキンリー"
         myTitle.textContent = "プログラマー、データアナリスト"
         aboutMeTitle.textContent = "私のこと"
