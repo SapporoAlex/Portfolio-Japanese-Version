@@ -338,6 +338,7 @@ ul {
     .category-title {
         width: 80%;
         font-size: 18px;
+        padding: 3px;
     }
 
     .contact {
@@ -380,20 +381,25 @@ ul {
     }
 
     #profile-image img {
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 300px;
+        max-height: 300px;
         width: auto;
         height: auto;
         border-radius: 50%;
         padding: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     #title {
         font-size: 20px;
+        padding: 5px;
     }
 
     #email {
-        font-size: 20px;
+        font-size: 16px;
+        padding: 2px;
     }
 
     .about-me, .qualifications-tools, .contact {
@@ -404,6 +410,10 @@ ul {
     .category-title {
         width: 60%;
         font-size: 16px;
+        padding: 3px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .contact {
