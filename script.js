@@ -116,7 +116,7 @@ languageBtn.addEventListener('click', () => {
         project6MadeFor.textContent = "In Collaboration with IKS International School"
         project6DescriptionText.textContent = "I consulted with the Principal of IKS International School about teaching a 2 day Summer Programming Course. The idea was presented to the parents, and many were interested with the course being fully booked (14 students) within 24 hours. The students who had no experience programming were taught the fundamentals of programming through 10 coding activities I designed. The course finished with a written exam I wrote, and students were awarded certificates of completion. The feedback from students and parents was very positive, and a regular weekly programming lesson has begun which I teach. The economic outcome of this summer course is that the school made a large profit for the 2 day course, and the ongoing weekly lessons. Additionally the school can advertise that it is the only school offering elementary aged programming lessons in Hokkaido."
         summerCourse.textContent = "My Python Course"
-        contactSection.textContent = "Contact ME"
+        contactSection.textContent = "Contact Me"
         contactInfo.textContent = "Feel free to contact me via LinkedIn, GitHub, or Email"
     } else if (currentLanguage === "English") {
         currentLanguage = "Japanese"
