@@ -170,4 +170,4 @@ languageBtn.addEventListener('click', () => {
         contactSection.textContent = "お問い合わせ"
         contactInfo.textContent = "LinkedIn、GitHub、Eメールでお気軽にご連絡ください。"
         }
-})
+});
