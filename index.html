@@ -10,6 +10,7 @@
 <body>
 <header></header>
 <div class="main-section">
+    <div id="language-button">English</div>
     <div class="intro" id="img-and-name">
         <div id="profile-image">
             <img src="static/profile.png" alt="Profile Image">
@@ -27,49 +28,50 @@
         </div>
     </div>
     <div class="about-me">
-        <h2>私のこと</h2>
+        <h2 id="about-me-title">私のこと</h2>
         <p id="about-text">北海道札幌市在住のプログラマーです。2023年にプログラミングを始めて以来、様々なプロジェクトを完成させ、
             現在いくつかの日本企業でワークフローを改善し、ステークホルダーに最新の洞察を与えるために使用されています。自動化、
             ウェブスクレイピング、データ分析、ウェブ開発、家庭教師など、ITソリューションを見つけるために企業で働いています。日本語と英語が話せます。また、5年以上のチームマネジメントとクライアントへのコンサルティング経験があります。</p>
     </div>
     <div class="qualifications-tools">
         <div class="qualifications">
-        <h2>資格</h2>
+        <h2 id="certifications-title">資格</h2>
             <ul>
-                <li>Responsive Web Design (freeCodeCamp)</li>
-                <li>Data Analysis with Python (freeCodeCamp)</li>
-                <li>Scientific Computing with Python (freeCodeCamp)</li>
-                <li>N2 日本語能力試験（JLPT）</li>
-                <li>Bachelor of Education (Curtin University)</li>
+                <li id="js-algorithms">JavaScript Algorithms & Data Structures (Free Code Camp)</li>
+                <li id="responsive-web-design">Responsive Web Design (freeCodeCamp)</li>
+                <li id="data-analysis">Data Analysis with Python (freeCodeCamp)</li>
+                <li id="scientific-computing">Scientific Computing with Python (freeCodeCamp)</li>
+                <li id="n2">N2 日本語能力試験（JLPT）</li>
+                <li id="bachelor">Bachelor of Education (Curtin University)</li>
             </ul>
         </div>
 
         <div class="languages">
-        <h2>コード言語</h2>
+        <h2 id="languages-title">コード言語</h2>
             <ul>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Git</li>
-                <li>Django</li>
-                <li>Pandas</li>
-                <li>Playwright</li>
-                <li>JupyterNotebook</li>
+                <li id="python">Python</li>
+                <li id="sql">SQL</li>
+                <li id="html">HTML</li>
+                <li id="css">CSS</li>
+                <li id="js">JavaScript</li>
+                <li id="git">Git</li>
+                <li id="django">Django</li>
+                <li id="pandas">Pandas</li>
+                <li id="playwright">Playwright</li>
+                <li id="jn">JupyterNotebook</li>
             </ul>
         </div>
     </div>
 
 
 <div class="category-title" id="data-analysis">
-    <h1>データ分析</h1>
+    <h1 id="project-1-title">データ分析</h1>
 </div>
 
 <div class="project-1" id="box">
 
     <div class="project-name">
-        <h1>ウェブスクレイピング、データクリーニング、データビジュアライゼーション</h1>    
+        <h1 id="project-1-name">ウェブスクレイピング、データクリーニング、データビジュアライゼーション</h1>    
     </div>
 
     <div id="project-img">
@@ -77,9 +79,9 @@
     </div>
 
     <div class="project-description">
-        <h2 id="subtitle">ADL2のために作りました</h2>
-        <p>2024年1月～4月</p>
-        <p id="description-text">ホテル会社ADL2とのコンサルティングを経て。私は、生産性を高め、精度を上げる方法を特定しました。
+        <h2 class="subtitle" id="made-for-adl2">ADL2のために作りました</h2>
+        <p id="project-1-date">2024年1月～4月</p>
+        <p id="project-1-description-text">ホテル会社ADL2とのコンサルティングを経て。私は、生産性を高め、精度を上げる方法を特定しました。
             同社は予約と収益に関する最新の情報を必要としていたため、私は3つのツールを作成しました。まず一つ目、 
             会社のデータベースから毎日のホテル予約データをスクレイピングし、その情報を関連スタッフにメールで送信する自動スクリプトを毎日作成しました。
             次に、2つのデータベースからデータをスクレイピングし、データをクレンジングし、数値に必要な処理を実行し、データをわかりやすく表示する週次収益レポートスクリプトを作成しました。
@@ -91,9 +93,9 @@
     </div>
 
     <div class="github-links">
-        <a href="https://github.com/SapporoAlex/Hotel-Reservation-Cancellation-Daily-Update" target="_blank">毎日の予約状況</a>
-        <a href="https://github.com/SapporoAlex/Weekly-Earnings-Data-Update" target="_blank">週間収益報告</a>
-        <a href="https://github.com/SapporoAlex/Email-Parser" target="_blank">メールパーサー</a>
+        <a href="https://github.com/SapporoAlex/Hotel-Reservation-Cancellation-Daily-Update" target="_blank" id="hotel-reservation">毎日の予約状況</a>
+        <a href="https://github.com/SapporoAlex/Weekly-Earnings-Data-Update" target="_blank" id="weekly-earnings-data">週間収益報告</a>
+        <a href="https://github.com/SapporoAlex/Email-Parser" target="_blank" id="mail-parser">メールパーサー</a>
     </div>
 
     <div class="tools">
@@ -105,7 +107,7 @@
 
 <div class="project-2" id="box">
     <div class="project-name">
-        <h1>KPIトラッカー</h1>    
+        <h1 id="project-2-title">KPIトラッカー</h1>    
     </div>
     <div class="project-box">
 
@@ -114,9 +116,9 @@
         </div>
 
         <div class="project-description">
-            <h2 id="subtitle">タイタン・グリーンテック製</h2>
-            <p>2024年3月</p>
-            <p id="description-text">東京にある人材紹介会社、タイタン・グリーンテックのCEOから、データ可視化ツールの作成を手伝ってもらえないかとの依頼がありました。
+            <h2 class="subtitle" id="project-2-made-for">タイタン・グリーンテック製</h2>
+            <p id="project-2-date">2024年3月</p>
+            <p id="project-2-description-text">東京にある人材紹介会社、タイタン・グリーンテックのCEOから、データ可視化ツールの作成を手伝ってもらえないかとの依頼がありました。
                 私はいくつかのドラフトを作成し、何がベストな解決策になりそうか話し合いました。社長は、毎週月曜日に社員のKPIをグラフで表示し、
                 各社員の履歴書と就職先の比率を四半期ごとに表示する方法を求めていました。彼はデータベース上に表形式の情報を持っていましたが、
                 最新の情報を見やすく取得する迅速で効率的な方法を求めていました。私は、データベースから従業員データをスクレイピングし、テーブルに挿入し、
@@ -126,7 +128,7 @@
         </div>
 
         <div class="github-links">
-            <a href="https://github.com/SapporoAlex/KPI-Tracker" target="_blank">KPIトラッカー</a>
+            <a href="https://github.com/SapporoAlex/KPI-Tracker" target="_blank" id="kpi-tracker">KPIトラッカー</a>
         </div>
 
         <div class="tools">
@@ -137,13 +139,13 @@
 
 
 <div class="category-title" id="software-development">
-    <h1>ソフトウェア開発</h1>
+    <h1 id="project-3-title">ソフトウェア開発</h1>
 </div>
 
 
 <div class="project-3" id="box">
     <div class="project-name">
-        <h1>タイムカードアプリ</h1>    
+        <h1 id="project-3-name">タイムカードアプリ</h1>    
     </div>
     <div class="project-box">
 
@@ -152,9 +154,9 @@
         </div>
 
         <div class="project-description">
-            <h2 id="subtitle">ADL2のために作りました</h2>
-            <p>2024年5月</p>
-            <p id="description-text">これは、ホテルのスタッフのためのタイムカードとして機能するローカルマシン上で実行することができるプログラムです。
+            <h2 class="subtitle" id="project-3-made-for">ADL2のために作りました</h2>
+            <p id="project-3-date">2024年5月</p>
+            <p id="project-3-description-text">これは、ホテルのスタッフのためのタイムカードとして機能するローカルマシン上で実行することができるプログラムです。
                 スタッフが何時に出勤、退勤したかを記録します。最大20人のスタッフをプログラムに追加することができます、 
                 また、経理担当者は計算機能を使って、各従業員の月ごとの勤務時間を日別に集計することができます。
                 このデータは、従業員をExcelシートごとに区切った月ごとのExcelファイルに保存されます。
@@ -164,13 +166,13 @@
         <div id="admin-explanation">
             <img src="static/6.jpg" width="15%" height="auto">
             <div id="extra-img-text">
-                <h3>管理プログラム</h3>
-            <p>管理スタッフは、付属の管理プログラムを使って簡単に変更できます。</p>
+                <h3 id="admin-program">管理プログラム</h3>
+            <p id="admin-program-description">管理スタッフは、付属の管理プログラムを使って簡単に変更できます。</p>
             </div>
         </div>
 
         <div class="github-links">
-            <a href="https://github.com/SapporoAlex/Employee-Timecard-Shift-Calculator" target="_blank">タイムカードアプリ</a>
+            <a href="https://github.com/SapporoAlex/Employee-Timecard-Shift-Calculator" target="_blank" id="time-card">タイムカードアプリ</a>
         </div>
 
         <div class="tools">
@@ -180,12 +182,12 @@
 </div>
 
 <div class="category-title" id="game-development">
-    <h1>ゲーム開発</h1> 
+    <h1 id="project-4-title">ゲーム開発</h1> 
 </div>
 
 <div class="project-4" id="box">
     <div class="project-name">
-        <h1>アフリカ大統領</h1>    
+        <h1 id="project-4-name">アフリカ大統領</h1>    
     </div>
     <div class="project-box">
 
@@ -194,15 +196,15 @@
         </div>
 
         <div class="project-description">
-            <h2 id="subtitle">JavaScript ゲーム</h2>
-            <p>2024年7月</p>
-            <p id="description-text">このゲームを作ろうと思ったのは、20世紀後半のアフリカの大統領についてのドキュメンタリーを見てからです。JavaScriptのスキルを向上させる良い機会でもありました。
+            <h2 class="subtitle" id="project-4-made-for">JavaScript ゲーム</h2>
+            <p id="project-4-date">2024年7月</p>
+            <p id="project-4-description-text">このゲームを作ろうと思ったのは、20世紀後半のアフリカの大統領についてのドキュメンタリーを見てからです。JavaScriptのスキルを向上させる良い機会でもありました。
             </p>
         </div>
 
         <div class="github-links">
-            <a href="https://github.com/SapporoAlex/Game-African-President" target="_blank">アフリカ大統領</a>
-            <a href="https://sapporoalex.github.io/Game-African-President/" target="_blank">ゲームをプレイ</a>
+            <a href="https://github.com/SapporoAlex/Game-African-President" target="_blank" id="african-president">アフリカ大統領</a>
+            <a href="https://sapporoalex.github.io/Game-African-President/" target="_blank" id="play-african-president">ゲームをプレイ</a>
         </div>
 
         <div class="tools">
@@ -213,7 +215,7 @@
 
 <div class="project-5" id="box">
     <div class="project-name">
-        <h1>ハミー・ストップ</h1>    
+        <h1 id="project-5-name">ハミー・ストップ</h1>    
     </div>
     <div class="project-box">
 
@@ -222,13 +224,13 @@
         </div>
 
         <div class="project-description">
-            <h2 id="subtitle">娘のために作りました</h2>
-            <p>2024年7月</p>
-            <p id="description-text">アニメーションの作り方を理解する方法として、このゲームを作りました。このゲームでは、さまざまなアニメーション効果を使い、バグのない楽しいオリジナルゲームを作る方法を紹介します。</p>
+            <h2 class="subtitle" id="project-5-made-for">娘のために作りました</h2>
+            <p id="project-5-date">2024年7月</p>
+            <p id="project-5-description-text">アニメーションの作り方を理解する方法として、このゲームを作りました。このゲームでは、さまざまなアニメーション効果を使い、バグのない楽しいオリジナルゲームを作る方法を紹介します。</p>
         </div>
 
         <div class="github-links">
-            <a href="https://github.com/SapporoAlex/Game-Hammy-Stop" target="_blank">ハミー・ストップ</a>
+            <a href="https://github.com/SapporoAlex/Game-Hammy-Stop" target="_blank" id="hammy-stop">ハミー・ストップ</a>
         </div>
 
         <div class="tools">
@@ -238,12 +240,12 @@
 </div>
 
 <div class="category-title" id="teaching">
-    <h1>ティーチング</h1>
+    <h1 id="project-6-title">ティーチング</h1>
 </div>
 
 <div class="project-6" id="box">
     <div class="project-name">
-        <h1>夏のPythonコース</h1>    
+        <h1 id="project-6-name">夏のPythonコース</h1>    
     </div>
     <div class="project-box">
 
@@ -252,9 +254,9 @@
         </div>
 
         <div class="project-description">
-            <h2 id="subtitle">IKSインターナショナルスクールとのコラボレーション</h2>
-            <p>2024年8月</p>
-            <p id="description-text">IKSインターナショナルスクールの校長先生に、2日間のサマー・プログラミング・コースについて相談しました。このアイデアを保護者に説明したところ、多くの人が興味を示し、
+            <h2 class="subtitle" id="project-6-made-for">IKSインターナショナルスクールとのコラボレーション</h2>
+            <p id="project-6-date">2024年8月</p>
+            <p id="project-6-description-text">IKSインターナショナルスクールの校長先生に、2日間のサマー・プログラミング・コースについて相談しました。このアイデアを保護者に説明したところ、多くの人が興味を示し、
                 24時間以内にコースは満席（14人）になりました。プログラミングの経験のない生徒たちは、
                 私がデザインしました10のコーディング・アクティビティを通してプログラミングの基礎を学びました。
                 コースは私が作成した筆記試験で終了し、生徒には修了証書が授与されました。生徒や保護者からのフィードバックは非常に好意的で、私が教える週1回の定期的なプログラミング・レッスンが始まりました。
@@ -263,7 +265,7 @@
         </div>
 
         <div class="github-links">
-            <a href="https://github.com/SapporoAlex/2024-Summer-Programming-Course" target="_blank">私のPythonコース</a>
+            <a href="https://github.com/SapporoAlex/2024-Summer-Programming-Course" target="_blank" id="python-course">私のPythonコース</a>
         </div>
 
         <div class="tools">
@@ -273,11 +275,11 @@
 </div>
 
 <div class="category-title" id="contact">
-    <h1>お問い合わせ</h1>
+    <h1 id="contact-section">お問い合わせ</h1>
 </div>
 
 <div class="contact">
-    <h2>LinkedIn、GitHub、Eメールでお気軽にご連絡ください。</h2>
+    <h2 id="contact-info">LinkedIn、GitHub、Eメールでお気軽にご連絡ください。</h2>
     <p>alexanderfromaustralia@gmail.com</p>
     <ul id="links">
         <li><a href="https://github.com/SapporoAlex" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -285,5 +287,6 @@
     </ul>
 </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
