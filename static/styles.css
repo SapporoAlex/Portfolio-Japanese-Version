@@ -1,3 +1,29 @@
+#language-button {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add some padding for size */
+  font-size: 16px; /* Increase font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Subtle shadow */
+}
+
+/* Hover effect */
+#language-button:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Darker shadow */
+}
+
+/* Active effect */
+#language-button:active {
+  background-color: #004494; /* Even darker blue for active click */
+  transform: scale(0.98); /* Slightly shrink button on click */
+}
+
 body {
     background-color: #fff; /* Use hex or named color for consistency */
     margin: 0;
