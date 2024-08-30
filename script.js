@@ -63,7 +63,7 @@ const project6DescriptionText = document.getElementById("project-6-description-t
 const summerCourse = document.getElementById("summer-course");
 const contactSection = document.getElementById("contact-section");
 const contactInfo = document.getElementById("contact-info");
-const currentLanguage = "Japanese"
+let currentLanguage = "Japanese"
 
 
 languageBtn.addEventListener('click', () => {
