@@ -60,10 +60,10 @@ const project6Name = document.getElementById("project-6-name");
 const project6Date = document.getElementById("project-6-date");
 const project6MadeFor = document.getElementById("project-6-made-for");
 const project6DescriptionText = document.getElementById("project-6-description-text");
-const summerCourse = document.getElementById("summer-course");
+const summerCourse = document.getElementById("python-course");
 const contactSection = document.getElementById("contact-section");
 const contactInfo = document.getElementById("contact-info");
-let currentLanguage = "Japanese"
+let currentLanguage = "Japanese";
 
 
 languageBtn.addEventListener('click', () => {
