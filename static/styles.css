@@ -1,40 +1,53 @@
-#language-button {
-  background-color: #007bff; /* Blue background */
-  margin-top: 10px;
-  margin-left: 10px;
-  color: white; /* White text */
-  border: none; /* Remove default border */
-  padding: 10px 20px; /* Add some padding for size */
-  font-size: 16px; /* Increase font size */
-  font-weight: bold; /* Bold text */
-  border-radius: 25px; /* Rounded corners */
-  cursor: pointer; /* Change cursor to pointer */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Subtle shadow */
+:root {
+    --primary-color: #007bff;
+    --primary-dark: #0056b3;
+    --primary-darker: #004494;
+    --secondary-color: cadetblue;
+    --tertiary-color: darkolivegreen;
+    --text-color: white;
+    --text-dark: rgb(0, 0, 0);
+    --font-size-large: 24px;
+    --font-size-medium: 16px;
+    --font-size-small: 12px;
 }
 
-/* Hover effect */
-#language-button:hover {
-  background-color: #0056b3; /* Darker blue */
-  transform: scale(1.05); /* Slightly enlarge button on hover */
-  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Darker shadow */
-}
-
-/* Active effect */
-#language-button:active {
-  background-color: #004494; /* Even darker blue for active click */
-  transform: scale(0.98); /* Slightly shrink button on click */
-}
-
-#language-button:focus {
-    outline: 2px dashed #0056b3;
+* {
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #fff; /* Use hex or named color for consistency */
+    background-color: #fff;
     margin: 0;
     font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-sizing: border-box; /* Add this for better layout control */
+}
+
+#language-button {
+    background-color: var(--primary-color);
+    margin: 10px;
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+#language-button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+#language-button:active {
+    background-color: var(--primary-darker);
+    transform: scale(0.98);
+}
+
+#language-button:focus {
+    outline: 2px dashed var(--primary-dark);
 }
 
 img {
@@ -63,26 +76,25 @@ ul {
 
 #name, #title, #email {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(0, 0, 0);
+    color: var(--text-dark);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .contact-top {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     font-size: 25px;
-    color:rgb(19, 0, 128);
+    color: rgb(19, 0, 128);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .contact-top li a {
-    color:rgb(0, 0, 0);
+    color: var(--text-dark);
     font-size: 40px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
 }
 
 .intro {
@@ -92,80 +104,18 @@ ul {
     align-items: center;
 }
 
-.about-me {
-    background-color: darkolivegreen;
-    color: white;
-    font-size: 24px;
-    padding-left: 25%;
-    padding-right: 25%;
-    margin-top: 200px;
+.about-me, #data-analysis, #game-development, #project-1, #project-2, #project-4, #project-5 {
+    background-color: var(--tertiary-color);
 }
 
-.qualifications-tools {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: cadetblue;
-    color: white;
-    padding: 80px;
-    padding-left: 25%;
-    padding-right: 25%;
-    font-size: 24px;
-    height: auto;
+.qualifications-tools, #software-development, #teaching, #project-3, #project-6 {
+    background-color: var(--secondary-color);
 }
 
-.category-title {
-    padding-left: 25%;
-    padding-right: 25%;
-    margin-top: 20vh;
-    margin-bottom: 10vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    width: 30%;
-    border-radius: 10px;
-}
-
-#data-analysis {
-    background-color: darkolivegreen;
-}
-
-#software-development {
-    background-color: cadetblue;
-}
-
-#game-development {
-    background-color: darkolivegreen;
-}
-
-#teaching {
-    background-color: cadetblue;
-}
-
-#contact {
+.contact, #contact {
     background-color: rgb(66, 66, 66);
-}
-
-.project-1, .project-2 {
-    background-color: darkolivegreen;
-}
-
-.project-3 {
-    background-color: cadetblue;
-}
-
-.project-4, .project-5{
-    background-color: darkolivegreen;
-}
-
-.project-6 {
-    background-color: cadetblue;
-}
-
-.contact {
-    background-color: rgb(66, 66, 66);
-    font-size: 25px;
-    color: white;
+    color: var(--text-color);
+    font-size: var(--font-size-large);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,15 +123,12 @@ ul {
 }
 
 #box {
-    color: white;
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding: 20px 25%;
 }
 
 .project-name {
@@ -195,7 +142,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 #extra-image {
@@ -204,7 +151,7 @@ ul {
 
 #admin-explanation {
     margin-top: 30px;
-    font-size: 24px;
+    font-size: var(--font-size-large);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -212,7 +159,7 @@ ul {
     align-items: center;
 }
 
-.project-description {
+.project-description, #subtitle, #description-text {
     width: 50%;
     font-size: 20px;
     display: flex;
@@ -221,40 +168,12 @@ ul {
     align-items: center;
 }
 
-#subtitle {
-    width: 50%;
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#description-text {
-    width: 50%;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.tools {
+.tools, .github-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px;
-    font-size: 20px;
-}
-
-.github-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    font-size: 20px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    font-size: var(--font-size-medium);
 }
 
 .github-links a {
@@ -263,7 +182,7 @@ ul {
     border-radius: 10px;
     padding: 5px;
     border: 2px solid aliceblue;
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
 }
 
 #links {
@@ -275,16 +194,13 @@ ul {
 }
 
 .contact li a {
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     font-size: 40px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
 }
 
 .tools p {
-    background-color:red;
-    color: white;
+    background-color: red;
+    color: var(--text-color);
     border: 2px solid cornsilk;
     border-radius: 10px;
     padding: 5px;
@@ -303,14 +219,9 @@ ul {
         font-size: 24px;
     }
 
-    .about-me {
-        padding: 30px;
-        font-size: 16px;
-    }
-
-    .qualifications-tools {
+    .about-me, .qualifications-tools {
         padding: 20px;
-        font-size: 16px;
+        font-size: var(--font-size-medium);
     }
 
     .category-title {
@@ -320,12 +231,12 @@ ul {
     }
 
     .contact {
-        font-size: 16px;
+        font-size: var(--font-size-medium);
         padding-bottom: 5px;
     }
 
     #admin-explanation {
-        font-size: 16px;
+        font-size: var(--font-size-medium);
     }
 
     .project-description, #subtitle, #description-text {
@@ -361,13 +272,7 @@ ul {
     #profile-image img {
         max-width: 300px;
         max-height: 300px;
-        width: auto;
-        height: auto;
-        border-radius: 50%;
         padding: 10%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
 
     #title {
@@ -388,17 +293,8 @@ ul {
     .category-title {
         width: 60%;
         font-size: 16px;
-        padding: 3px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
 
-    .contact {
-        font-size: 16px;
-        padding-bottom: 5px;
-    }
-    
     #admin-explanation {
         font-size: 14px;
     }
@@ -427,3 +323,4 @@ ul {
         font-size: 40px;
     }
 }
+
