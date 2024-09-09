@@ -117,6 +117,8 @@ ul {
 .category-title {
     padding-left: 25%;
     padding-right: 25%;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
     color: white;
     display: flex;
     justify-content: center;
@@ -189,18 +191,11 @@ ul {
     font-size: 20px;
 }
 
-#project-img {
+.project-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-}
-
-#project-img img {
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 #extra-image {
