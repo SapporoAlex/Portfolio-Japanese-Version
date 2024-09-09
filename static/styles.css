@@ -38,7 +38,7 @@ body {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50vw;
     height: auto;
 }
 
@@ -53,8 +53,8 @@ ul {
 }
 
 #profile-image img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 50%;
+    max-height: 50%;
     width: auto;
     height: auto;
     border-radius: 50%;
@@ -63,7 +63,7 @@ ul {
 
 #name, #title, #email {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(19, 0, 128);
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,8 +95,9 @@ ul {
 .about-me {
     background-color: darkolivegreen;
     color: white;
-    font-size: 30px;
-    padding: 150px;
+    font-size: 24px;
+    padding-left: 25%;
+    padding-right: 25%;
     margin-top: 200px;
 }
 
@@ -109,7 +110,7 @@ ul {
     padding: 80px;
     padding-left: 25%;
     padding-right: 25%;
-    font-size: 30px;
+    font-size: 24px;
     height: auto;
 }
 
@@ -217,7 +218,7 @@ ul {
 }
 
 .project-description {
-    width: 80%;
+    width: 50%;
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -226,16 +227,16 @@ ul {
 }
 
 #subtitle {
-    width: 75%;
-    font-size: 30px;
+    width: 50%;
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #description-text {
-    width: 75%;
-    font-size: 24px;
+    width: 50%;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
