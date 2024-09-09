@@ -1,3 +1,24 @@
+:root {
+    --primary-color: #007bff;
+    --primary-dark: #0056b3;
+    --primary-darker: #004494;
+    --secondary-color: cadetblue;
+    --tertiary-color: darkolivegreen;
+    --text-color: white;
+    --text-dark: rgb(0, 0, 0);
+    --font-size-large: 24px;
+    --font-size-medium: 16px;
+    --font-size-small: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: #fff;
     margin: 0;
@@ -45,4 +66,21 @@ h1, h2, p {
     margin: 0 auto; /* Center horizontally */
     text-align: center; /* Center text */
     line-height: 1.4; /* Improve readability with some line height */
+}
+
+#profile-image img {
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#name, #title, #email {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
