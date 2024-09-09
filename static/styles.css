@@ -140,9 +140,16 @@ ul {
 
 .project-img {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.project-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 #extra-image {
