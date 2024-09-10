@@ -194,7 +194,7 @@ h1, h2, p {
 .category-title {
     display: flex;
     flex-direction: row;
-    margin-left: -70vw;
+    margin-left: -50vw;
     color: white;
     font-size: xx-large;
     font-weight: bold;
@@ -215,7 +215,7 @@ h1, h2, p {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .github-links {
