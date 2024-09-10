@@ -276,3 +276,7 @@ h1, h2, p {
     width: 20vw;
     height: auto;
 }
+
+#project-1-title #project-3-title #webscraping-title #timecard-app-title #hammy-title {
+    color: var(--text-dark);
+}
