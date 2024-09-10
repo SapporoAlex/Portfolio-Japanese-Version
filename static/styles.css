@@ -192,11 +192,11 @@ h1, h2, p {
 }
 
 .category-title {
-    display: flex;
+    display: fixed;
     flex-direction: row;
     margin-left: -50vw;
     color: white;
-    font-size: xx-large;
+    font-size: 30px;
     font-weight: bold;
 }
 
