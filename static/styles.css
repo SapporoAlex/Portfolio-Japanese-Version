@@ -207,7 +207,7 @@ h1, h2, p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .tools {
@@ -231,11 +231,11 @@ h1, h2, p {
 
 .github-links a {
     text-decoration: none;
-    background-color: navy;
+    background-color: var(--primary-darker);
     border-radius: 10px;
     padding: 5px;
-    border: 2px solid aqua;
-    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    color: white;
 }
 
 #links {
@@ -255,9 +255,9 @@ h1, h2, p {
 }
 
 .tools p {
-    background-color:crimson;
+    background-color:var(--primary-color);
     color: white;
-    border: 2px solid plum;
+    border: 2px solid white;
     border-radius: 10px;
     padding: 5px;
 }
@@ -282,51 +282,235 @@ h1, h2, p {
 }
 
 @media (max-width: 768px) {
-    img, h1, h2, p, #about-section, #project-1, #project-2, #project-3, #project-4, #project-5, #project-6 {
-        max-width: 90vw; /* Increase width for tablet */
-    }
-
-    #about-section, .project-name, .box, .category-title, .contact, .tools, .github-links, #admin-explanation, #extra-img-text {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    #links {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .contact li a, .tools p {
-        font-size: 16px;
-    }
-}
-
-/* Responsive styles for mobile devices (up to 480px) */
-@media (max-width: 480px) {
     body {
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        font-family: 'Futura', Calibri, Lato, Times, 'Times New Roman', serif;
+      }
+    img {
+        display: block;
+        max-width: 90vw;
+        height: auto;
+        margin: 0 auto;
     }
-
-    img, h1, h2, p, #profile-image, #about-section, #project-1, #project-2, #project-3, #project-4, #project-5, #project-6 {
-        max-width: 90vw; /* Maximum width for mobile */
+    
+    h1, h2, p {
+        max-width: 90vw;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.4;
     }
-
-    #language-button {
-        font-size: 14px;
-        padding: 8px 15px;
+    
+    #profile-image {
+        width: 60vw; /* Or any fixed size */
+        height: auto;
+        border-radius: 50%;
+        padding: 20px;
     }
-
-    .contact {
-        font-size: 20px;
+    
+    #name, #title, #email {
+        font-family: 'Futura', Calibri, Lato, Times, 'Times New Roman', serif;
+        color: var(--text-dark);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
-    .github-links, .tools {
+    
+    #about-section {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-size: larger;
+        padding: 5px;
+        width: 100vw;
+        height: auto;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    
+    #all-me {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        align-items: center;
         gap: 10px;
     }
-
+    
+    #links {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none; /* Removes bullet points */
+        padding: 0; /* Removes default padding */
+        margin: 0; /* Removes default margin */
+        gap: 5vw;
+        font-size: xx-large;
+    }
+    
+    #qualifications-languages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: var(--tertiary-color);
+        color: var(--text-color);
+        font-size: x-large;
+        padding-top: 5vh;
+        padding-bottom: 5vh; 
+    }
+    
+    .project-name {
+        font-family: 'Futura', Calibri, Lato, Times, 'Times New Roman', serif;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    #project-1 {
+        background-color: var(--secondary-color);
+        color: var(--text-dark);
+        padding-top: 5vh;
+        padding-bottom: 5vh; 
+    }
+    
+    #project-2 {
+        background-color: var(--tertiary-color);
+        color: var(--text-color);
+        padding-top: 5vh;
+        padding-bottom: 5vh; 
+    }
+    
+    #project-3 {
+        background-color: var(--secondary-color);
+        color: var(--text-dark);
+        padding-top: 5vh;
+        padding-bottom: 5vh; 
+    }
+    
+    #project-4 {
+        background-color: var(--tertiary-color);
+        color: var(--text-color);
+        padding-top: 5vh;
+        padding-bottom: 5vh; 
+    }
+    
+    #project-5 {
+        background-color: var(--secondary-color);
+        color: var(--text-dark);
+        padding-top: 5vh;
+        padding-bottom: 5vh; 
+    }
+    #project-6 {
+        background-color: var(--tertiary-color);
+        color: var(--text-color);
+        padding-top: 5vh;
+        padding-bottom: 5vh; 
+    }
+    
+    .box {
+        font-size: larger;
+        padding: 15px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .category-title {
+        display: fixed;
+        flex-direction: row;
+        margin: 0;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .contact {
+        background-color: rgb(66, 66, 66);
+        font-size: 25px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    
+    .tools {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        font-size: 24px;
+    }
+    
+    .github-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        font-size: 20px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
     .github-links a {
-        padding: 10px;
+        text-decoration: none;
+        background-color: var(--primary-darker);
+        border-radius: 10px;
+        padding: 5px;
+        border: 2px solid white;
+        color: white;
+    }
+    
+    #links {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .contact li a {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    .tools p {
+        background-color:var(--primary-color);
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    #admin-explanation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    
+    #extra-img-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20vw;
+        height: auto;
+    }
+    
+    #project-1-title, #project-3-title, #webscraping-title, #timecard-app-title, #hammy-title {
+        color: var(--text-dark);
     }
 }
-
