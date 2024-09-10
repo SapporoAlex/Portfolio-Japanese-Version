@@ -280,3 +280,52 @@ h1, h2, p {
 #project-1-title #project-3-title #webscraping-title #timecard-app-title #hammy-title {
     color: var(--text-dark);
 }
+
+@media (max-width: 768px) {
+    img, h1, h2, p, #about-section, #project-1, #project-2, #project-3, #project-4, #project-5, #project-6 {
+        max-width: 80vw; /* Increase width for tablet */
+    }
+
+    #about-section, .project-name, .box, .category-title, .contact, .tools, .github-links, #admin-explanation, #extra-img-text {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact li a, .tools p {
+        font-size: 16px;
+    }
+}
+
+/* Responsive styles for mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    body {
+        background-size: contain;
+    }
+
+    img, h1, h2, p, #profile-image, #about-section, #project-1, #project-2, #project-3, #project-4, #project-5, #project-6 {
+        max-width: 90vw; /* Maximum width for mobile */
+    }
+
+    #language-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .contact {
+        font-size: 20px;
+    }
+
+    .github-links, .tools {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .github-links a {
+        padding: 10px;
+    }
+}
