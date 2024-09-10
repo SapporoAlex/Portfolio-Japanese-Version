@@ -8,26 +8,31 @@
     <title>Alex McKinley</title>
 </head>
 <body>
-<header></header>
-<div class="main-section">
+<header>
     <button id="language-button">English</button>
-    <div class="intro" id="img-and-name">
-        <img src="static/profile.png" alt="Profile Image" id="profile-image">
-        <h1 id="name">アレックス・マッキンリー</h1>
-        <h2 id="title">プログラマー、データアナリスト</h2>
-        <h3 id="email">alexanderfromaustralia@gmail.com</h3>
-        <ul id="links">
-        <li><a href="https://github.com/SapporoAlex" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/alex-mckinley-257266296/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
+</header>
+<div class="main-section">
+    <div id="all-me">
+
+        <div class="intro" id="img-and-name">
+            <img src="static/profile.png" alt="Profile Image" id="profile-image">
+            <h1 id="name">アレックス・マッキンリー</h1>
+            <h2 id="title">プログラマー、データアナリスト</h2>
+            <h3 id="email">alexanderfromaustralia@gmail.com</h3>
+            <ul id="links">
+                <li><a href="https://github.com/SapporoAlex" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/alex-mckinley-257266296/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="box" id="about-section">
+            <h2 id="about-me-title">私のこと</h2>
+            <p id="about-text">北海道札幌市在住のプログラマーです。2023年にプログラミングを始めて以来、様々なプロジェクトを完成させ、
+                現在いくつかの日本企業でワークフローを改善し、ステークホルダーに最新の洞察を与えるために使用されています。自動化、
+                ウェブスクレイピング、データ分析、ウェブ開発、家庭教師など、ITソリューションを見つけるために企業で働いています。日本語と英語が話せます。また、5年以上のチームマネジメントとクライアントへのコンサルティング経験があります。</p>
+        </div>
     </div>
     
-    <div class="box">
-        <h2 id="about-me-title">私のこと</h2>
-        <p id="about-text">北海道札幌市在住のプログラマーです。2023年にプログラミングを始めて以来、様々なプロジェクトを完成させ、
-            現在いくつかの日本企業でワークフローを改善し、ステークホルダーに最新の洞察を与えるために使用されています。自動化、
-            ウェブスクレイピング、データ分析、ウェブ開発、家庭教師など、ITソリューションを見つけるために企業で働いています。日本語と英語が話せます。また、5年以上のチームマネジメントとクライアントへのコンサルティング経験があります。</p>
-    </div>
+
     
     <div class="box" id="qualifications-languages">
         <div class="qualifications">
@@ -59,12 +64,13 @@
         </div>
     </div>
     
-<div class="category-title" id="data-analysis">
-    <h1 id="project-1-title">データ分析</h1>
-</div>
+
 
 <div class="box" id="project-1">
-    <h1 id="project-1-name">ウェブスクレイピング、データクリーニング、データビジュアライゼーション</h1>    
+    <div class="category-title" id="data-analysis">
+        <h1 id="project-1-title">データ分析</h1>
+    </div>
+    <h1 class="project-name">ウェブスクレイピング、データクリーニング、データビジュアライゼーション</h1>    
     <img src="static/2.jpg" width="100%" height="auto">
     <h2 class="subtitle" id="made-for-adl2">ADL2のために作りました</h2>
     <p id="project-1-date">2024年1月～4月</p>
@@ -90,7 +96,7 @@
 </div>
 
 <div class="box" id="project-2">
-        <h1 id="project-2-title">KPIトラッカー</h1>    
+        <h1 class="project-name">KPIトラッカー</h1>    
         <img src="static/4.jpg" width="100%" height="auto">
         <h2 class="subtitle" id="project-2-made-for">タイタン・グリーンテック製</h2>
         <p id="project-2-date">2024年3月</p>
@@ -111,12 +117,13 @@
         </div>
     </div>
 
-<div class="category-title" id="software-development">
-    <h1 id="project-3-title">ソフトウェア開発</h1>
-</div>
+
 
 <div class="box" id="project-3">
-    <h1 id="project-3-name">タイムカードアプリ</h1>    
+    <div class="category-title" id="software-development">
+        <h1 id="project-3-title">ソフトウェア開発</h1>
+    </div>
+    <h1 class="project-name">タイムカードアプリ</h1>    
     <img src="static/5.jpg" width="100%" height="auto">
     <h2 class="subtitle" id="project-3-made-for">ADL2のために作りました</h2>
     <p id="project-3-date">2024年5月</p>
@@ -127,7 +134,7 @@
     </p>
     <div id="admin-explanation">
         <div id="extra-image">
-            <img src="static/6.jpg" width="15vw" height="auto">
+            <img src="static/6.jpg">
         </div>
         
         <div id="extra-img-text">
@@ -135,23 +142,22 @@
             <p id="admin-program-description">管理スタッフは、付属の管理プログラムを使って簡単に変更できます。</p>
         </div>
     </div>
+    <div class="github-links">
+        <a href="https://github.com/SapporoAlex/Employee-Timecard-Shift-Calculator" target="_blank" id="time-card">タイムカードアプリ</a>
+    </div>
+
+    <div class="tools">
+        <p id="python">Python</p><p id="pandas">Pygame</p><p id="openpyxl">Openpyxl</p>
+    </div>
 </div>
 
-        <div class="github-links">
-            <a href="https://github.com/SapporoAlex/Employee-Timecard-Shift-Calculator" target="_blank" id="time-card">タイムカードアプリ</a>
-        </div>
 
-        <div class="tools">
-            <p id="python">Python</p><p id="pandas">Pygame</p><p id="openpyxl">Openpyxl</p>
-        </div>
-</div>
-
-<div class="category-title" id="game-development">
-    <h1 id="project-4-title">ゲーム開発</h1> 
-</div>
 
 <div class="box" id="project-4">
-    <h1 id="project-4-name">アフリカ大統領</h1>    
+    <div class="category-title" id="game-development">
+        <h1 id="project-4-title">ゲーム開発</h1> 
+    </div>
+    <h1 class="project-name">アフリカ大統領</h1>    
     <img src="static/7.jpg" width="100%" height="auto">
     <h2 class="subtitle" id="project-4-made-for">JavaScript ゲーム</h2>
     <p id="project-4-date">2024年7月</p>
@@ -170,7 +176,7 @@
 </div>
 
 <div class="box" id="project-5">
-    <h1 id="project-5-name">ハミー・ストップ</h1>    
+    <h1 class="project-name">ハミー・ストップ</h1>    
     <img src="static/8.jpg" width="100%" height="auto">
 
     <div class="project-description">
@@ -188,12 +194,13 @@
     </div>
 </div>
 
-<div class="category-title" id="teaching">
-    <h1 id="project-6-title">ティーチング</h1>
-</div>
+
 
 <div class="box" id="project-6">
-    <h1 id="project-6-name">夏のPythonコース</h1>    
+    <div class="category-title" id="teaching">
+        <h1 id="project-6-title">ティーチング</h1>
+    </div>
+    <h1 class="project-name">夏のPythonコース</h1>    
     <img src="static/10.jpg" width="100%" height="auto">
     <h2 class="subtitle" id="project-6-made-for">IKSインターナショナルスクールとのコラボレーション</h2>
     <p id="project-6-date">2024年8月</p>
@@ -212,11 +219,10 @@
     </div>
 </div>
 
-<div class="category-title" id="contact">
-    <h1 id="contact-section">お問い合わせ</h1>
-</div>
-
 <div class="contact">
+    <div class="category-title" id="contact">
+        <h1 id="contact-section">お問い合わせ</h1>
+    </div>
     <h2 id="contact-info">LinkedIn、GitHub、Eメールでお気軽にご連絡ください。</h2>
     <p>alexanderfromaustralia@gmail.com</p>
     <ul id="links">
