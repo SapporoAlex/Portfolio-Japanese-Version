@@ -277,7 +277,7 @@ h1, h2, p {
     height: auto;
 }
 
-#project-1-title #project-3-title #webscraping-title #timecard-app-title #hammy-title {
+#project-1-title, #project-3-title, #webscraping-title, #timecard-app-title, #hammy-title {
     color: var(--text-dark);
 }
 
