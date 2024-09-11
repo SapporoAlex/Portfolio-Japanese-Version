@@ -363,7 +363,7 @@ i {
     }
     
     #email {
-        font-size: 24px;
+        font-size: 16px;
     }
 
     #name-furigana {
@@ -371,10 +371,11 @@ i {
     }
 
     #about-section {
+        background-color: #00336686;
         color: var(--text-color);
-        font-size: large;
+        font-size: medium;
         padding: 5px;
-        width: 100vw;
+        width: 90vw;
         height: auto;
         display: flex;
         flex-direction: column;
