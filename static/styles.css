@@ -44,18 +44,18 @@ body {
 }
 
 #language-button:hover {
-    background-color: var(--primary-dark);
+    background-color: var(--tertiary-color);
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
 }
 
 #language-button:active {
-    background-color: var(--primary-darker);
+    background-color: var(--tertiary-color);
     transform: scale(0.98);
 }
 
 #language-button:focus {
-    outline: 2px dashed var(--primary-dark);
+    outline: 2px dashed var(--tertiary-color);
 }
 
 img {
@@ -90,7 +90,7 @@ h1, h2, p {
 #about-section {
     background-color: var(--primary-color);
     color: var(--text-color);
-    font-size: larger;
+    font-size: var(--font-size-large);
     padding: 30px;
     width: 35vw;
     height: auto;
