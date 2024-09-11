@@ -11,7 +11,10 @@
     --font-size-small: 12px;
 }
 
-
+#name-furigana {
+    color: white;
+}
+ 
 * {
     box-sizing: border-box;
 }
@@ -26,6 +29,7 @@ body {
   }
 
 #language-button {
+    position: absolute;
     background-color: var(--primary-color);
     margin: 10px;
     color: var(--text-color);
@@ -86,7 +90,7 @@ h1, h2, p {
 #about-section {
     background-color: var(--primary-color);
     color: var(--text-color);
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-medium);
     padding: 30px;
     width: 35vw;
     height: auto;
@@ -362,13 +366,8 @@ i {
         font-size: 24px;
     }
 
-    #name-title-email-links {
-        background-color: black;
-        position: fixed;
-        width: 100vw;
-        height: 100px;
-        display: flex;
-        padding: 10px;
+    #name-furigana {
+        font-size: 14px;
     }
 
     #about-section {
@@ -392,6 +391,7 @@ i {
         padding-bottom: 5vh;
         align-items: center;
         gap: 10px;
+        background-position: left;
     }
     
     #links {
