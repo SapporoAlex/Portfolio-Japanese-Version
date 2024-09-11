@@ -1,5 +1,6 @@
 const languageBtn = document.getElementById("language-button");
 const myName = document.getElementById("name");
+const myNameFurigana = document.getElementById("name-furigana");
 const myTitle = document.getElementById("title");
 const aboutMeTitle = document.getElementById("about-me-title");
 const aboutText = document.getElementById("about-text");
@@ -70,6 +71,7 @@ languageBtn.addEventListener('click', () => {
         currentLanguage = "English"
         languageBtn.textContent = "日本語"
         myName.textContent = "Alex McKinley"
+        myNameFurigana.textContent = ""
         myTitle.textContent = "Programmer, Data Analyst, Tech Guy"
         aboutMeTitle.textContent = "About me"
         aboutText.textContent = "I am a programmer living in Sapporo, Hokkaido. I have completed many projects that are currently used by Japanese companies to improve their workflow and give up-to-date insights to their stakeholders. I work with companies to find IT solutions for automation, web scraping, data analysis, web development, and tutoring. I speak Japanese and English. If you are looking for someone to get you the data you need to make better decisions, build software to improve your workflow, make or alter a website, or teach programming, contact me."
@@ -120,7 +122,8 @@ languageBtn.addEventListener('click', () => {
     } else if (currentLanguage === "English") {
         currentLanguage = "Japanese"
         languageBtn.textContent = "English"
-        myName.textContent = "アレックス・マッキンリー"
+        myName.textContent = "Alex McKinley"
+        myNameFurigana.textContent = "アレックス・マッキンリー"
         myTitle.textContent = "プログラマー、データアナリスト"
         aboutMeTitle.textContent = "私のこと"
         aboutText.textContent = "北海道札幌市在住のプログラマーです。2023年にプログラミングを始めて以来、様々なプロジェクトを完成させ、現在いくつかの日本企業でワークフローを改善し、ステークホルダーに最新の洞察を与えるために使用されています。自動化、ウェブスクレイピング、データ分析、ウェブ開発、家庭教師など、ITソリューションを見つけるために企業で働いています。日本語と英語が話せます。また、5年以上のチームマネジメントとクライアントへのコンサルティング経験があります。"
