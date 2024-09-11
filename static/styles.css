@@ -11,6 +11,7 @@
     --font-size-small: 12px;
 }
 
+
 * {
     box-sizing: border-box;
 }
@@ -231,7 +232,7 @@ h1, h2, p {
 
 .github-links a {
     text-decoration: none;
-    background-color: var(--primary-darker);
+    background-color: var(--primary-color);
     border-radius: 10px;
     padding: 5px;
     border: 2px solid white;
@@ -255,7 +256,7 @@ h1, h2, p {
 }
 
 .tools p {
-    background-color:var(--primary-color);
+    background-color: var(--primary-darker);;
     color: white;
     border: 2px solid white;
     border-radius: 10px;
@@ -321,7 +322,7 @@ h1, h2, p {
     #about-section {
         background-color: var(--primary-color);
         color: var(--text-color);
-        font-size: larger;
+        font-size: large;
         padding: 5px;
         width: 100vw;
         height: auto;
@@ -350,10 +351,11 @@ h1, h2, p {
         padding: 0; /* Removes default padding */
         margin: 0; /* Removes default margin */
         gap: 5vw;
-        font-size: xx-large;
+        font-size: x-large;
     }
     
     #qualifications-languages {
+        margin-top: 5vh;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -429,12 +431,12 @@ h1, h2, p {
         flex-direction: row;
         margin: 0;
         color: white;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: bold;
     }
     
     .contact {
-        background-color: rgb(66, 66, 66);
+        background-color:  var(--primary-darker);
         font-size: 25px;
         color: white;
         display: flex;
@@ -447,24 +449,26 @@ h1, h2, p {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 30px;
-        font-size: 24px;
+        gap: 5px;
+        font-size: 16px;
     }
     
     .github-links {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 30px;
-        font-size: 20px;
+        gap: 5px;
+        font-size: 16px;
         list-style-type: none;
         padding: 0;
         margin: 0;
     }
     
     .github-links a {
+        display: flex;
+        justify-content: center;
         text-decoration: none;
-        background-color: var(--primary-darker);
+        background-color: var(--primary-color);
         border-radius: 10px;
         padding: 5px;
         border: 2px solid white;
@@ -488,7 +492,7 @@ h1, h2, p {
     }
     
     .tools p {
-        background-color:var(--primary-color);
+        background-color: var(--primary-darker);
         color: white;
         border: 2px solid white;
         border-radius: 10px;
