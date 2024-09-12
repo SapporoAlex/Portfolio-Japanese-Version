@@ -25,8 +25,8 @@ a {
 
 body {
     margin: 0;
-    font-family: 'Futura', Calibri, Lato, Times, 'Times New Roman', serif;
-  }
+    font-family: 'Futura', 'Noto Sans JP', sans-serif;
+}
 
 #language-button {
     position: absolute;
@@ -102,11 +102,17 @@ h1, h2, p {
 }
 
 #all-me {
-    background-image: url('bg.jpg'); /* Path to your image */
-    background-size: cover; /* Scales the image to cover the entire background */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
-    background-position: center; /* Centers the background image */
+    margin: 0;
     height: 100vh;
+    background: linear-gradient(135deg, #003366 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #003366 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, #003366 25%, transparent 25%),
+                linear-gradient(45deg, #003366 25%, transparent 25%);
+    background-size: 100vw 100vh;
+    background-color: #0066cc; /* Fallback color */
+    background-blend-mode: multiply;
+    background-repeat: repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -133,9 +139,14 @@ h1, h2, p {
     justify-content: space-evenly;
     background-color: var(--tertiary-color);
     color: var(--text-color);
-
     padding-top: 5vh;
     padding-bottom: 5vh; 
+}
+
+.lang-logo {
+    padding: 10px;
+    width: 10vw;
+    height: auto;
 }
 
 li {
@@ -300,11 +311,8 @@ i {
 
 @media (max-width: 950px) {
     body {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         margin: 0;
-        font-family: 'Futura', Calibri, Lato, Times, 'Times New Roman', serif;
+        font-family: 'Futura', 'Noto Sans JP', sans-serif;
     }
 
     img {
@@ -345,6 +353,12 @@ i {
     
     i {
         font-size: 40px;
+    }
+
+    .lang-logo {
+        padding: 5px;
+        width: 15vw;
+        height: auto;
     }
 
     #profile-image {
@@ -392,7 +406,7 @@ i {
         padding-bottom: 5vh;
         align-items: center;
         gap: 10px;
-        background-position: left;
+        background-position: bottom;
     }
     
     #links {

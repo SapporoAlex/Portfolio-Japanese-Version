@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Alex McKinley</title>
@@ -54,19 +55,32 @@
 
         <div class="languages">
         <h2 id="languages-title"><strong>コード言語</strong></h2>
-            <ul>
-                <li id="python">Python</li>
-                <li>C++</li>
-                <li id="sql">SQL</li>
-                <li id="html">HTML</li>
-                <li id="css">CSS</li>
-                <li id="js">JavaScript</li>
-                <li id="git">Git</li>
-                <li id="django">Django</li>
-                <li id="pandas">Pandas</li>
-                <li id="playwright">Playwright</li>
-                <li id="jn">JupyterNotebook</li>
-            </ul>
+            <table id="languages-table">
+                <tr>
+                    <td><img class="lang-logo" src="static/python.png">
+                    </td>
+                    <td><img class="lang-logo" src="static/js.png">
+                    </td>
+                    <td><img class="lang-logo" src="static/html.png">
+                    </td>
+                    <td><img class="lang-logo" src="static/css.png">
+                    </td>
+                    <td><img class="lang-logo" src="static/c++.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img class="lang-logo" src="static/django.png">
+                    </td>
+                    <td><img class="lang-logo" src="static/sql.png">
+                    </td>
+                    <td><img class="lang-logo" src="static/pandas.png">
+                    </td>
+                    <td><img class="lang-logo" src="static/jupyter.png">
+                    </td>
+                    <td><img class="lang-logo" src="static/git.png">
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
     
@@ -76,16 +90,16 @@
     </div>
     <h1 class="project-name" id="webscraping-title"><strong>ウェブスクレイピング、データクリーニング</strong></h1>
     <img src="static/2.jpg" width="100%" height="auto">
-    <h2 class="subtitle" id="made-for-adl2">ADL2のために作りました</h2>
+    <h2 class="subtitle" id="made-for-adl2">ホテル会社向けに作られた</h2>
     <p id="project-1-date">2024年1月～4月</p>
     <p id="project-1-description-text">ホテル会社ADL2とのコンサルティングを経て。私は、生産性を高め、精度を上げる方法を特定しました。
         同社は予約と収益に関する最新の情報を必要としていたため、私は3つのツールを作成しました。まず一つ目、 
         会社のデータベースから毎日のホテル予約データをスクレイピングし、その情報を関連スタッフにメールで送信する自動スクリプトを毎日作成しました。
         次に、2つのデータベースからデータをスクレイピングし、データをクレンジングし、数値に必要な処理を実行し、データをわかりやすく表示する週次収益レポートスクリプトを作成しました。
-        そしてデータをわかりやすいグラフで表示します。3つ目のツールはEメール・パーサーだ。ADL2の見込み客は、ホームページの予約フォームに記入します。
+        そしてデータをわかりやすいグラフで表示します。3つ目のツールはEメール・パーサーだ。本社の見込み客は、ホームページの予約フォームに記入します。
         フォームに記入し、スタッフの受信トレイにメールを送ります。すべてのメールが適切に受信され、タイムリーに読まれるようにするためです、 
         メールから関連情報を抽出し、エクセルの表に追加することができるメール・パーサーを書きました。
-        このメール解析ツールは、日本語のメールも英語のメールも同じように解析します。私は、ADL2社のビジネスを改善するための新しい方法を生み出すために、ADL2社のコンサルティングを続けています。
+        このメール解析ツールは、日本語のメールも英語のメールも同じように解析します。私は、本社のビジネスを改善するための新しい方法を生み出すために、ADL2社のコンサルティングを続けています。
     </p>
     <div class="github-links">
         <a href="https://github.com/SapporoAlex/Hotel-Reservation-Cancellation-Daily-Update" target="_blank" id="hotel-reservation">毎日の予約状況</a>
@@ -126,7 +140,7 @@
     </div>
     <h1 class="project-name" id="timecard-app-title"><strong>タイムカードアプリ</strong></h1>    
     <img src="static/5.jpg" width="100%" height="auto">
-    <h2 class="subtitle" id="project-3-made-for">ADL2のために作りました</h2>
+    <h2 class="subtitle" id="project-3-made-for">ホテル会社向けに作られた</h2>
     <p id="project-3-date">2024年5月</p>
     <p id="project-3-description-text">これは、ホテルのスタッフのためのタイムカードとして機能するローカルマシン上で実行することができるプログラムです。
         スタッフが何時に出勤、退勤したかを記録します。最大20人のスタッフをプログラムに追加することができます、 
