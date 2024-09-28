@@ -1,0 +1,483 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Futura', 'Noto Sans JP', sans-serif;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px; /* Adjust this as needed */
+    z-index: 3; /* Ensure navbar stays above other content */
+    text-decoration: none;
+}
+
+#nav-bar p {
+    margin-top: 7px;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#nav-bar p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(static/imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero button {
+    padding: 12px;
+    font-size: 1.1em;
+    width: 15%;
+    background-color: #007BFF; /* Primary blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#hero button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 80, 0.644); /* Adjust the blue tint here */
+    z-index: 1;
+}
+
+#hero * {
+    position: relative;
+    z-index: 2; /* Ensure content appears above the blue tint */
+}
+
+#hero h1 {
+    font-size: 65px;
+}
+#hero h2 {
+    font-size: 45px;
+}
+
+/* About me top section */
+
+#about-me-section {
+    padding-bottom: 100px;
+}
+
+#about-me-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-lower {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+    font-size: 20px;
+}
+
+#profile-img {
+    width: 12vw; /* Or any fixed size */
+    height: auto;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* About me center section */
+
+#about-me-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about-me-text {
+    max-width: 35%; 
+}
+
+/* About me bottom section */
+
+#about-me-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#qualifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cert-logo {
+    padding: 5px;
+    width: 9vw;
+    height: auto;
+}
+
+#languages-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.lang-logo {
+    padding: 10px;
+    width: 5vw;
+    height: auto;
+}
+
+#portfolio {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ecf2ff; /* Optional background */
+}
+
+#portfolio h1 {
+margin-bottom: 30px;
+font-size: 4em;
+}
+
+#portfolio h2 {
+margin-bottom: 30px;
+font-size: 2em;
+}
+
+.portfolio-grid {
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05); /* Optional hover effect */
+}
+
+#contact {
+    height: 80vh;
+    align-content: top;
+    justify-content: top;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Darker text for contrast */
+}
+
+#contact-message {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#contact form {
+    margin-left: 35%;
+    margin-right: auto;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; /* Space between form elements */
+}
+
+#contact label {
+    font-size: 1.1em;
+    color: #555; /* Soft text color */
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #007BFF; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+#contact button {
+    padding: 12px;
+    font-size: 1.1em;
+    width: 20%;
+    background-color: #007BFF; /* Primary blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#contact textarea {
+    resize: none; /* Disable resizing of the text area */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+footer li a {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#links {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    font-size: xx-large;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Media queries for responsiveness */
+
+/* Small devices (phones, up to 600px) */
+@media (max-width: 600px) {
+    #nav-bar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #nav-bar p {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    #hero h1 {
+        font-size: 40px;
+    }
+
+    #hero h2 {
+        font-size: 25px;
+    }
+
+    #hero button {
+        width: 70%;
+    }
+
+    #about-me-top {
+        padding: 20px;
+    }
+
+    #top-lower {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
+        font-size: 18px;
+    }
+
+    #about-me-center {
+        flex-direction: column;
+    }
+
+    #about-me-text {
+        max-width: 80%;
+    }
+
+    #portfolio h1 {
+        font-size: 2.5em;
+    }
+
+    #portfolio h2 {
+        font-size: 1.5em;
+    }
+
+    #portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #contact form {
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 80%;
+    }
+
+    #contact button {
+        width: 100%;
+    }
+
+    footer li a {
+        font-size: 24px;
+    }
+}
+
+/* Medium devices (tablets, up to 900px) */
+@media (max-width: 900px) {
+    #nav-bar {
+        height: auto;
+    }
+
+    #hero h1 {
+        font-size: 50px;
+    }
+
+    #hero h2 {
+        font-size: 30px;
+    }
+
+    #hero button {
+        width: 40%;
+    }
+
+    #top-lower {
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        font-size: 18px;
+    }
+
+    #about-me-center {
+        flex-direction: column;
+    }
+
+    #portfolio h1 {
+        font-size: 3em;
+    }
+
+    #portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    #contact form {
+        margin-left: 20%;
+        margin-right: 20%;
+        max-width: 60%;
+    }
+
+    footer li a {
+        font-size: 32px;
+    }
+}
+
+/* Large devices (desktops, above 1200px) */
+@media (min-width: 1200px) {
+    #hero h1 {
+        font-size: 70px;
+    }
+
+    #hero h2 {
+        font-size: 50px;
+    }
+
+    #hero button {
+        width: 20%;
+    }
+
+    #about-me-top {
+        padding: 40px;
+    }
+
+    #top-lower {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        font-size: 22px;
+    }
+
+    #portfolio h1 {
+        font-size: 5em;
+    }
+
+    #portfolio h2 {
+        font-size: 2.5em;
+    }
+
+    #portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    #contact form {
+        margin-left: 30%;
+        margin-right: 30%;
+        max-width: 40%;
+    }
+
+    footer li a {
+        font-size: 48px;
+    }
+}
