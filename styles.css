@@ -387,7 +387,7 @@ footer li a {
         margin-left: 10vh;
         margin-right: 10vh;
         display: grid;
-        grid-template-columns: 1fr; /* Control image sizing */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Create a flexible grid */
         gap: 20px;
         padding: 0 20px;
         justify-items: center; /* Center align items horizontally */
