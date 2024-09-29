@@ -496,6 +496,7 @@ footer li a {
         height: 60vh;
         align-content: top;
         justify-content: top;
+        margin-bottom: 20vh;
     }
 
     #contact form {
