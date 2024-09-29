@@ -394,6 +394,7 @@ footer li a {
         height: 100vh;
         align-content: top;
         justify-content: top;
+        margin-bottom: 30vh;
     }
     
     #contact h2 {
