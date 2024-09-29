@@ -317,7 +317,7 @@ footer li a {
 /* Small devices (phones, up to 600px) */
 @media (max-width: 600px) {
     #nav-bar {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
     }
 
@@ -381,11 +381,14 @@ footer li a {
     #portfolio-grid {
         grid-template-columns: 1fr;
     }
-    
+    #contact {
+        height: auto;
+    }
     #contact form {
         margin-left: 5%;
         margin-right: 5%;
         max-width: 90%;
+        gap: 5px;
     }
 
     #contact button {
@@ -433,6 +436,13 @@ footer li a {
 
     #portfolio-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+
+    #contact {
+        height: 60vh;
+        align-content: top;
+        justify-content: top;
     }
 
     #contact form {
