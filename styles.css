@@ -367,13 +367,6 @@ footer li a {
     #about-me-text {
         max-width: 80%;
     }
-    
-    .language-item img {
-        width: 50px; /* Set a fixed width for each image */
-        height: auto;
-        display: block;
-        transition: transform 0.3s ease;
-    }
         
     .cert-box {
         display: flex;
@@ -388,6 +381,25 @@ footer li a {
         height: auto;
     }
     
+    .languages-grid {
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        display: grid;
+        grid-template-columns: 1fr; /* Control image sizing */
+        gap: 20px;
+        padding: 0 20px;
+        justify-items: center; /* Center align items horizontally */
+    }
+    
+    .language-item img {
+        width: 50px; /* Set a fixed width for each image */
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
     #portfolio h1 {
         font-size: 2.5em;
     }
