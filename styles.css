@@ -342,6 +342,14 @@ footer li a {
         padding: 20px;
     }
 
+    
+    #profile-img {
+        width: 20vw; /* Or any fixed size */
+        height: auto;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
     #top-lower {
         flex-direction: column;
         margin-left: 0;
@@ -381,9 +389,27 @@ footer li a {
     #portfolio-grid {
         grid-template-columns: 1fr;
     }
+
     #contact {
-        height: auto;
+        height: 100vh;
+        align-content: top;
+        justify-content: top;
     }
+    
+    #contact h2 {
+        font-size: 2em;
+        margin-bottom: 3px;
+    }
+    
+    #contact-message {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
     #contact form {
         margin-left: 5%;
         margin-right: 5%;
@@ -393,6 +419,10 @@ footer li a {
 
     #contact button {
         width: 100%;
+    }
+
+    footer {
+        bottom: 0;
     }
 
     footer li a {
