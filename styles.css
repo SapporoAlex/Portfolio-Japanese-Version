@@ -135,11 +135,9 @@ body {
 /* About me bottom section */
 
 #about-me-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #ffffff; /* Optional background */
 }
+    
 
 #qualifications {
     display: flex;
@@ -154,32 +152,20 @@ body {
     height: auto;
 }
 
-#languages-table {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 15px;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-.lang-logo {
-    padding: 10px;
-    width: 5vw;
-    height: auto;
-}
-
-.language-grid {
+.languages-grid {
     margin-top: 10vh;
     margin-bottom: 15vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Control image sizing */
     gap: 20px;
     padding: 0 20px;
+    justify-items: center; /* Center align items horizontally */
 }
 
 .language-item img {
-    width: 10%;
+    width: 100px; /* Set a fixed width for each image */
     height: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -240,8 +226,8 @@ font-size: 2em;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #contact form {
@@ -382,10 +368,11 @@ footer li a {
         max-width: 80%;
     }
     
-    .lang-logo {
-        padding: 2px;
-        width: 10vw;
+    .language-item img {
+        width: 50px; /* Set a fixed width for each image */
         height: auto;
+        display: block;
+        transition: transform 0.3s ease;
     }
         
     .cert-box {
