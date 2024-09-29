@@ -384,11 +384,11 @@ footer li a {
     .languages-grid {
         margin-top: 10vh;
         margin-bottom: 15vh;
-        margin-left: 10vh;
-        margin-right: 10vh;
+        margin-left: 5vh;
+        margin-right: 5vh;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Create a flexible grid */
-        gap: 20px;
+        gap: 5px;
         padding: 0 20px;
         justify-items: center; /* Center align items horizontally */
     }
