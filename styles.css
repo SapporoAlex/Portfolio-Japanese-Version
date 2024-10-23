@@ -37,6 +37,7 @@ body {
     border: none;
     cursor: pointer;
 }
+
 #top-button:hover {
     background-color: #007bff;
     outline: #007BFF, solid, 10px;
@@ -431,16 +432,8 @@ footer li a {
         font-size: 1.5em;
     }
 
-    .portfolio-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    .portfolio-item img {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
+    #portfolio-grid {
+        grid-template-columns: 1fr;
     }
 
     #contact {
