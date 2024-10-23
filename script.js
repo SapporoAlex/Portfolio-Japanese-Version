@@ -12,7 +12,24 @@ const contactEmail = document.getElementById("contact-email");
 const contactMessage = document.getElementById("your-message");
 const sendBtn = document.getElementById("sendBtn");
 let currentLanguage = "English";
+let topButton = document.getElementById("top-button");
 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        topButton.style.display = "block";
+    }
+    else {
+        topButton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 callToActionBtn.addEventListener('click', () => {
     document.getElementById('contact').scrollIntoView({

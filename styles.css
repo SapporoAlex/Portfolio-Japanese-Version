@@ -19,6 +19,29 @@ body {
     text-decoration: none;
 }
 
+
+#top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    border-radius: 50%;
+    background-image: url(static/imgs/top.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    outline: #0056b3;
+    border: none;
+    cursor: pointer;
+}
+#top-button:hover {
+    background-color: #007bff;
+    outline: #007BFF, solid, 10px;
+}
+
 #nav-bar p {
     margin-top: 7px;
     color: white;
@@ -408,8 +431,16 @@ footer li a {
         font-size: 1.5em;
     }
 
-    #portfolio-grid {
-        grid-template-columns: 1fr;
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
     }
 
     #contact {
