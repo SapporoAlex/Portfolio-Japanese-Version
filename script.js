@@ -11,6 +11,7 @@ const contactName = document.getElementById("contact-name");
 const contactEmail = document.getElementById("contact-email");
 const contactMessage = document.getElementById("your-message");
 const sendBtn = document.getElementById("sendBtn");
+const message = document.getElementById("message");
 let currentLanguage = "English";
 let topButton = document.getElementById("top-button");
 
@@ -70,6 +71,7 @@ languageBtn.addEventListener('click', () => {
         contactName.textContent = "お名前："
         contactEmail.textContent = "メールアドレス："
         contactMessage.textContent = "メッセージ："
+        message.placeholder = "作ってほしいものあるんですが、"
         sendBtn.textContent = "送信"
         } else if (currentLanguage === "Japanese") {
         currentLanguage = "English"
@@ -85,6 +87,7 @@ languageBtn.addEventListener('click', () => {
         contactName.textContent = "Your Name:"
         contactEmail.textContent = "Your Email:"
         contactMessage.textContent = "Your Message:"
+        message.placeholder = "Hi, are you able to make a ...?"
         sendBtn.textContent = "Send"
         }
     });
