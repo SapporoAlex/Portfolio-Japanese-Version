@@ -74,10 +74,10 @@ body {
 
 #hero button {
     padding: 12px;
-    font-size: 1.1em;
+    font-size: 25px;
     width: 15%;
-    background-color: #007BFF; /* Primary blue color */
-    color: white;
+    background-color: #fffb00;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -86,7 +86,7 @@ body {
 
 
 #hero button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #fc6500; /* Darker blue on hover */
 }
 
 #hero::before {
@@ -96,7 +96,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 80, 0.644); /* Adjust the blue tint here */
+    background-color: rgba(0, 0, 78, 0.644); /* Adjust the blue tint here */
     z-index: 1;
 }
 
@@ -150,18 +150,28 @@ body {
 }
 
 .enlarged {
-    transform: scale(5); /* Adjust scale as desired */
+    transform: scale(4.5); /* Adjust scale as desired */
 }
+
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
 
 /* About me center section */
 
 #about-me-center {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: normal;
+    background-color: #eeeeee;
+    position: relative;
 }
 
 /* About me bottom section */
@@ -171,6 +181,29 @@ body {
     background-color: #ffffff; /* Optional background */
 }
 
+#top-white-triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 0; 
+    border-style: solid;
+    border-width: 80px 95vw 0 0;
+    border-color: white transparent transparent transparent;
+    z-index: 99;
+}
+
+#bottom-white-triangle {
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0 80px 95vw;
+    border-color: transparent transparent white transparent;
+    transform: rotate(0deg);
+    position: absolute;
+}
 
 .cert-box {
     display: flex;
@@ -179,7 +212,7 @@ body {
 }
 
 .certs-text {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     border-radius: 5px;
     color: rgb(0, 0, 0);
     padding: 10px;
@@ -187,23 +220,23 @@ body {
 
 .cert-logo {
     padding: 5px;
-    width: 9vw;
+    width: 11vw;
     height: auto;
 }
 
 #curtin {
     position: relative;
-    top: 150px;
+    top: 225px;
 }
 
 #jlpt {
     position: relative;
-    top: 100px;
+    top: 150px;
 }
 
-#cousera {
+#coursera {
     position: relative;
-    top: 50px;
+    top: 75px;
 }
 
 #fcc {
@@ -213,13 +246,13 @@ body {
 
 .languages-grid {
     margin-top: 10vh;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
     margin-left: 10vh;
     margin-right: 10vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Control image sizing */
     gap: 30px;
-    padding: 0 20px;
+    padding: 10px 10px;
     justify-items: center; /* Center align items horizontally */
 }
 
@@ -231,19 +264,80 @@ body {
 }
 
 #portfolio {
-    padding: 50px 0;
     text-align: center;
     background-color: #ecf2ff; /* Optional background */
 }
 
+#portfolio-title {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 80px;
+}
+
+
+#portfolio-intro {
+    margin: 0;
+    padding: 0;
+    font-size: 200px;
+    height: 20%;
+    background-color: black;
+    color: white;
+}
+
+
+#graph-sheet {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    height: 30vh;
+    width: 30vh;
+    border: solid #00115a 2px;
+}
+
+.bar-anim {
+    position: absolute;
+    bottom: 0; /* Ensures bars are positioned at the bottom */
+    width: 20%;
+    background-color: #00115a;
+    transition: transform 0.9s ease;
+    transform: scaleY(0); /* Start with bars hidden */
+}
+
+#bar-one {
+    height: 40%; /* Final height */
+    left: 10%;
+}
+
+#bar-two {
+    height: 60%; /* Final height */
+    left: 40%;
+}
+
+#bar-three {
+    height: 80%; /* Final height */
+    left: 70%;
+}
+
+.bar-one-grown {
+    transform: scaleY(1); /* Scale to full height */
+}
+
+.bar-two-grown {
+    transform: scaleY(1); /* Scale to full height */
+}
+
+.bar-three-grown {
+    transform: scaleY(1); /* Scale to full height */
+}
+
+
 #portfolio h1 {
 margin-bottom: 30px;
-font-size: 4em;
+font-size: 40px;
 }
 
 #portfolio h2 {
 margin-bottom: 30px;
-font-size: 2em;
+font-size: 40px;
 }
 
 .portfolio-grid {
@@ -546,6 +640,10 @@ footer li a {
 
     #about-me-center {
         flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
     }
 
     #about-me-center img {
@@ -574,6 +672,12 @@ footer li a {
     #fcc {
         position: relative;
         top: 0;
+    }
+
+    #portfolio-title {
+        margin: 0;
+        margin-left: 20px;
+        font-size: 30px;
     }
 
     #portfolio h1 {

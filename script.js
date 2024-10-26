@@ -14,34 +14,51 @@ const sendBtn = document.getElementById("sendBtn");
 const message = document.getElementById("message");
 const navBar = document.getElementById("nav-bar");
 const aboutMeTitle = document.getElementById("about-me-title");
-
 const profileImage = document.getElementById("profile-img");
+const dataTitle = document.getElementById("data-title");
+const barOne = document.getElementById("bar-one");
+const barTwo = document.getElementById("bar-two");
+const barThree = document.getElementById("bar-three");
+const graphSheet = document.getElementById("graph-sheet");
 let currentLanguage = "English";
 let topButton = document.getElementById("top-button");
 
 
 window.onscroll = function() {scrollFunction()};
 
-
-// This is to enlarge the profileimage when the h1 above it is scrolled to.
-// Set up the Intersection Observer
+// Set up the Intersection Observer for both the profile image and the graph bars
 const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Add the 'enlarged' class when in view
-          profileImage.classList.add("enlarged");
-        } else {
-          // Remove the class when out of view
-          profileImage.classList.remove("enlarged");
+        // For profile image
+        if (entry.target === profileImage) {
+          if (entry.isIntersecting) {
+            profileImage.classList.add("enlarged");
+          } else {
+            profileImage.classList.remove("enlarged");
+          }
+        }
+  
+        // For graph bars
+        if (entry.target === graphSheet) {
+          if (entry.isIntersecting) {
+            barOne.classList.add("bar-one-grown");
+            barTwo.classList.add("bar-two-grown");
+            barThree.classList.add("bar-three-grown");
+          } else {
+            barOne.classList.remove("bar-one-grown");
+            barTwo.classList.remove("bar-two-grown");
+            barThree.classList.remove("bar-three-grown");
+          }
         }
       });
     },
-    { threshold: 0.5 } // Trigger when 50% of the "profile-img" is visible
+    { threshold: 0.3 } // Trigger when 30% of each element is visible
   );
   
-  // Start observing the "profile-image
+  // Start observing the profile image and graph sheet
   observer.observe(profileImage);
+  observer.observe(graphSheet);
 
 
 function scrollFunction() {
