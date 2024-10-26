@@ -12,18 +12,57 @@ const contactEmail = document.getElementById("contact-email");
 const contactMessage = document.getElementById("your-message");
 const sendBtn = document.getElementById("sendBtn");
 const message = document.getElementById("message");
+const navBar = document.getElementById("nav-bar");
+const aboutMeTitle = document.getElementById("about-me-title");
+
+const profileImage = document.getElementById("profile-img");
 let currentLanguage = "English";
 let topButton = document.getElementById("top-button");
 
 
 window.onscroll = function() {scrollFunction()};
 
+
+// This is to enlarge the profileimage when the h1 above it is scrolled to.
+// Set up the Intersection Observer
+const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Add the 'enlarged' class when in view
+          profileImage.classList.add("enlarged");
+        } else {
+          // Remove the class when out of view
+          profileImage.classList.remove("enlarged");
+        }
+      });
+    },
+    { threshold: 0.5 } // Trigger when 50% of the "profile-img" is visible
+  );
+  
+  // Start observing the "profile-image
+  observer.observe(profileImage);
+
+
 function scrollFunction() {
     if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
         topButton.style.display = "block";
+        navBar.style.position = "absolute";
     }
     else {
         topButton.style.display = "none";
+        navBar.style.position = "fixed";
+    }
+}
+
+function scrollFunction() {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        topButton.style.display = "block";
+        navBar.style.position = "absolute";
+    }
+    else {
+        topButton.style.display = "none";
+        navBar.style.position = "fixed";
     }
 }
 

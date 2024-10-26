@@ -11,7 +11,7 @@ body {
     justify-content: space-evenly;
     background-color: rgb(0, 0, 0);
     color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 50px; /* Adjust this as needed */
@@ -49,10 +49,11 @@ body {
     padding-bottom: 10px;
     font-size: 20px;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 #nav-bar p:hover {
-    text-decoration: underline;
+    color: #007bff;
     cursor: pointer;
 }
 
@@ -119,6 +120,8 @@ body {
 }
 
 #about-me-top {
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,38 +140,49 @@ body {
     font-size: 20px;
 }
 
+
 #profile-img {
-    width: 12vw; /* Or any fixed size */
+    width: 4vw; /* Or any fixed size */
     height: auto;
     border-radius: 50%;
-    padding: 20px;
+    padding: 100px;
+    transition: transform 0.9s ease; /* Smoothly transition the enlargement */
+}
+
+.enlarged {
+    transform: scale(5); /* Adjust scale as desired */
 }
 
 /* About me center section */
 
 #about-me-center {
+    padding-top: 100px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-}
-
-#about-me-text {
-    max-width: 35%; 
+    align-items: normal;
 }
 
 /* About me bottom section */
 
 #about-me-bottom {
+    padding-top: 100px;
     background-color: #ffffff; /* Optional background */
 }
-    
 
-#qualifications {
+
+.cert-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+
+.certs-text {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
 }
 
 .cert-logo {
@@ -177,20 +191,40 @@ body {
     height: auto;
 }
 
+#curtin {
+    position: relative;
+    top: 150px;
+}
+
+#jlpt {
+    position: relative;
+    top: 100px;
+}
+
+#cousera {
+    position: relative;
+    top: 50px;
+}
+
+#fcc {
+    position: relative;
+    top: 0;
+}
+
 .languages-grid {
     margin-top: 10vh;
     margin-bottom: 15vh;
     margin-left: 10vh;
     margin-right: 10vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Control image sizing */
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Control image sizing */
+    gap: 30px;
     padding: 0 20px;
     justify-items: center; /* Center align items horizontally */
 }
 
 .language-item img {
-    width: 100px; /* Set a fixed width for each image */
+    width: 150px; /* Set a fixed width for each image */
     height: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -343,6 +377,8 @@ footer li a {
 
 /* Small devices (phones, up to 600px) */
 @media (max-width: 600px) {
+
+
     #nav-bar {
         flex-direction: row;
         height: auto;
@@ -375,6 +411,10 @@ footer li a {
         height: auto;
         border-radius: 50%;
         padding: 20px;
+    }
+
+    .enlarged {
+        transform: scale(1); /* Adjust scale as desired */
     }
 
     #top-lower {
@@ -508,6 +548,34 @@ footer li a {
         flex-direction: column;
     }
 
+    #about-me-center img {
+        width: 30%;
+    }
+    .cert-box {
+        margin-bottom: 30px;
+    }
+
+
+    #curtin {
+        position: relative;
+        top: 0;
+    }
+    
+    #jlpt {
+        position: relative;
+        top: 0;
+    }
+    
+    #cousera {
+        position: relative;
+        top: 0;
+    }
+    
+    #fcc {
+        position: relative;
+        top: 0;
+    }
+
     #portfolio h1 {
         font-size: 3em;
     }
@@ -533,52 +601,8 @@ footer li a {
     footer li a {
         font-size: 32px;
     }
-}
 
-/* Large devices (desktops, above 1200px) */
-@media (min-width: 1200px) {
-    #hero h1 {
-        font-size: 70px;
-    }
-
-    #hero h2 {
-        font-size: 50px;
-    }
-
-    #hero button {
-        width: 20%;
-    }
-
-    #about-me-top {
-        padding: 40px;
-    }
-
-    #top-lower {
-        margin-left: 15%;
-        margin-right: 15%;
-        width: 70%;
-        font-size: 22px;
-    }
-
-    #portfolio h1 {
-        font-size: 5em;
-    }
-
-    #portfolio h2 {
-        font-size: 2.5em;
-    }
-
-    #portfolio-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-    #contact form {
-        margin-left: 30%;
-        margin-right: 30%;
-        max-width: 40%;
-    }
-
-    footer li a {
-        font-size: 48px;
+    .enlarged {
+        transform: (1);
     }
 }
