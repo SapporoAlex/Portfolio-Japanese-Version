@@ -101,13 +101,13 @@ contactBtn.addEventListener('click', () => {
 });
 
 aboutMeBtn.addEventListener('click', () => {
-    document.getElementById('about-me-section').scrollIntoView({
+    document.getElementById('about-me-top').scrollIntoView({
         behavior: 'smooth'
     });
 })
 
 portfolioBtn.addEventListener('click', () => {
-    document.getElementById('portfolio').scrollIntoView({
+    document.getElementById('portfolio-intro').scrollIntoView({
         behavior: 'smooth'
     });
 })
