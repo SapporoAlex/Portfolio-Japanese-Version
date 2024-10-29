@@ -298,7 +298,7 @@ body {
     bottom: 0; /* Ensures bars are positioned at the bottom */
     width: 20%;
     background-color: #00115a;
-    transition: transform 0.9s ease;
+    transition: transform 2s ease;
     transform: scaleY(0); /* Start with bars hidden */
 }
 
@@ -328,6 +328,215 @@ body {
 .bar-three-grown {
     transform: scaleY(1); /* Scale to full height */
 }
+
+#web-anim {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    height: 30vh;
+    width: 30vh;
+    border: solid #00115a 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+#left-web {
+    display: flex;
+    flex-direction: column;
+}
+
+#right-web {
+    display: flex;
+    flex-direction: column;
+}
+
+#square-web {
+    position: relative;
+    width: 90px;
+    height: 36%;
+    border: 2px solid #00115a; /* Adds a solid blue border */
+    flex-direction: row;
+    top: 50px;
+    margin-left: -105px;
+}
+
+#line1-web {
+    position: relative;
+    width: 100px;
+    height: 5%;
+    border: 2px solid #00115a; /* Adds a solid blue border */
+    background-color: #00115a;
+    top: 50px;
+
+}
+
+#line2-web {
+    position: relative;
+    width: 100px;
+    height: 5%;
+    border: 2px solid #00115a; /* Adds a solid blue border */
+    background-color: #00115a;
+    top: 60px;
+}
+
+#line3-web {
+    position: relative;
+    width: 100px;
+    height: 5%;
+    border: 2px solid #00115a; /* Adds a solid blue border */
+    background-color: #00115a;
+    top: 70px;
+}
+
+#line4-web {
+    position: relative;
+    width: 100px;
+    height: 5%;
+    border: 2px solid #00115a; /* Adds a solid blue border */
+    background-color: #00115a;
+    top: 80px;
+}
+
+#line5-web {
+    position: relative;
+    width: 200px;
+    height: 5%;
+    border: 2px solid #00115a; /* Adds a solid blue border */
+    background-color: #00115a;
+    top: 90px;
+}
+
+#line6-web {
+    position: relative;
+    width: 200px;
+    height: 5%;
+    border: 2px solid #00115a; /* Adds a solid blue border */
+    background-color: #00115a;
+    top: 100px;
+}
+
+
+.line-web {
+    position: absolute;
+    background-color: #00115a;
+    transition: transform 2s ease;
+    transform: scaleX(0); /* Start with bars hidden */
+}
+
+.line-web-grown {
+    transform: scaleX(1); /* Scale to full height */
+}
+
+
+
+#software-anim {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    height: 30vh;
+    width: 30vh;
+    border: solid #00115a 2px;
+}
+/* Main cog */
+.cog {
+    width: 100px;
+    height: 100px;
+    background: #00115a;
+    border-radius: 50%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    animation: spin 5s linear infinite;
+}
+  
+  /* Teeth of the cog */
+.cog::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 120px;
+    height: 120px;
+    background: repeating-conic-gradient(
+      from 0deg, 
+      #00115a 0deg 15deg, 
+      transparent 15deg 30deg
+    );
+    border-radius: 50%;
+}
+  
+  /* Inner hole of the cog */
+.cog::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 35px;
+    left: 35px;
+    background: #ecf2ff;
+    border-radius: 50%;
+    transform: translate(0%, 0%);
+}
+
+
+.cog2 {
+    width: 100px;
+    height: 100px;
+    background: #00115a;
+    border-radius: 50%;
+    position: relative;
+    top: 15%;
+    left: 50%;
+    animation: spin 5s linear infinite;
+}
+
+/* Teeth of the cog */
+.cog2::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -10px;
+
+    width: 120px;
+    height: 120px;
+    background: repeating-conic-gradient(
+        from 0deg, 
+        #00115a 0deg 15deg, 
+        transparent 15deg 30deg
+    );
+    border-radius: 50%;
+}
+
+/* Inner hole of the cog */
+.cog2::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 35px;
+    left: 35px;
+    background: #ecf2ff;
+    border-radius: 50%;
+    transform: translate(0%, 0%);
+}
+
+/* Spin animation */
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
+
+  
+#games-anim {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    height: 30vh;
+    width: 30vh;
+    border: solid #00115a 2px;
+}
+
 
 
 #portfolio h1 {
@@ -541,8 +750,6 @@ footer li a {
     }
     
     .languages-grid {
-        margin-top: 10vh;
-        margin-bottom: 15vh;
         margin-left: 5vh;
         margin-right: 5vh;
         display: grid;
@@ -656,22 +863,22 @@ footer li a {
 
     #curtin {
         position: relative;
-        top: 0;
+        top: 10px;
     }
     
     #jlpt {
         position: relative;
-        top: 0;
+        top: 10px;
     }
     
     #cousera {
         position: relative;
-        top: 0;
+        top: 5px;
     }
     
     #fcc {
         position: relative;
-        top: 0;
+        top: 10px;
     }
 
     #portfolio-title {

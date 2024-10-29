@@ -20,6 +20,13 @@ const barOne = document.getElementById("bar-one");
 const barTwo = document.getElementById("bar-two");
 const barThree = document.getElementById("bar-three");
 const graphSheet = document.getElementById("graph-sheet");
+const lineOne = document.getElementById("line1-web");
+const lineTwo = document.getElementById("line2-web");
+const lineThree = document.getElementById("line3-web");
+const lineFour = document.getElementById("line4-web");
+const lineFive = document.getElementById("line5-web");
+const lineSix = document.getElementById("line6-web");
+const webAnim = document.getElementById("web-anim");
 let currentLanguage = "English";
 let topButton = document.getElementById("top-button");
 
@@ -51,6 +58,24 @@ const observer = new IntersectionObserver(
             barThree.classList.remove("bar-three-grown");
           }
         }
+        if (entry.target === webAnim) {
+          if (entry.isIntersecting) {
+            lineOne.classList.add("line-web-grown");
+            lineTwo.classList.add("line-web-grown");
+            lineThree.classList.add("line-web-grown");
+            lineFour.classList.add("line-web-grown");
+            lineFive.classList.add("line-web-grown");
+            lineSix.classList.add("line-web-grown");
+          } else {
+            lineOne.classList.remove("line-web-grown");
+            lineTwo.classList.remove("line-web-grown");
+            lineThree.classList.remove("line-web-grown");
+            lineFour.classList.remove("line-web-grown");
+            lineFive.classList.remove("line-web-grown");
+            lineSix.classList.remove("line-web-grown");
+          }
+        }
+
       });
     },
     { threshold: 0.3 } // Trigger when 30% of each element is visible
@@ -59,6 +84,7 @@ const observer = new IntersectionObserver(
   // Start observing the profile image and graph sheet
   observer.observe(profileImage);
   observer.observe(graphSheet);
+  observer.observe(webAnim);
 
 
 function scrollFunction() {
