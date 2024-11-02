@@ -764,13 +764,13 @@ footer li a {
     }
 
     .cog2 {
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         background: #00115a;
         border-radius: 50%;
         position: relative;
-        top: 10%;
-        left: 50%;
+        top: 15%;
+        left: 60%;
         animation: spin 5s linear infinite;
     }
     
@@ -780,9 +780,8 @@ footer li a {
         position: absolute;
         left: -5px;
         top: -5px;
-    
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         background: repeating-conic-gradient(
             from 0deg, 
             #00115a 0deg 15deg, 
@@ -797,8 +796,8 @@ footer li a {
         position: absolute;
         width: 5px;
         height: 5px;
-        top: 10px;
-        left: 10px;
+        top: 7px;
+        left: 7px;
         background: #ecf2ff;
         border-radius: 50%;
         transform: translate(0%, 0%);
