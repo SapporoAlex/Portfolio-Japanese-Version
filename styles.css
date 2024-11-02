@@ -818,7 +818,7 @@ footer li a {
     }
 
     #coursera {
-        top: -20px;
+        top: -10px;
     }
     
     .languages-grid {
@@ -832,7 +832,7 @@ footer li a {
     }
     
     .language-item img {
-        width: 100px; /* Set a fixed width for each image */
+        width: 50px; /* Set a fixed width for each image */
         height: auto;
         display: block;
         transition: transform 0.3s ease;
@@ -843,7 +843,7 @@ footer li a {
     }
 
     #portfolio h2 {
-        font-size: 1.5em;
+        font-size: 1.0em;
     }
 
     #portfolio-grid {
