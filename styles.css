@@ -850,13 +850,12 @@ footer li a {
     }
 
     #portfolio h1 {
-        font-size: 2.5em;
+        font-size: 25px;
     }
 
     #portfolio h2 {
-        font-size: 1.0em;
-    }
-
+        font-size: 20px;
+        }
     #portfolio-grid {
         grid-template-columns: 1fr;
     }
