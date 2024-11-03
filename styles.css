@@ -161,7 +161,7 @@ body {
     justify-items: left;
     font-size: 28px;
     padding-top: 30px;
-    margin-left: 40px;
+    margin-left: 5%;
     gap: 20px;
 }
 
@@ -272,9 +272,6 @@ body {
     padding-bottom: 30px;
 }
 
-
-
-
 #portfolio-intro {
     margin: 0;
     padding: 0;
@@ -288,7 +285,6 @@ body {
     margin-left: 20px;
     font-size: 100px;
 }
-
 
 #graph-sheet {
     position: relative;
@@ -530,8 +526,6 @@ body {
     100% { transform: rotate(360deg); }
 }
   
-
-  
 #games-anim {
     position: relative;
     background-color: rgba(255, 255, 255, 0);
@@ -602,6 +596,21 @@ font-size: 40px;
 #portfolio h2 {
 margin-bottom: 30px;
 font-size: 40px;
+}
+
+.section-foreword {
+    font-size: 16px;
+    justify-content: left;
+    width: 50%;
+    align-items: end;
+    text-align: left;
+}
+
+.title-body {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 5%;
 }
 
 .portfolio-grid {
@@ -891,6 +900,21 @@ footer li a {
         height: auto;
         display: block;
         transition: transform 0.3s ease;
+    }
+
+    .section-foreword {
+        font-size: 16px;
+        justify-content: left;
+        width: 70%;
+        align-items: end;
+        text-align: left;
+    }
+    
+    .title-body {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 2%;
     }
 
     #portfolio h1 {

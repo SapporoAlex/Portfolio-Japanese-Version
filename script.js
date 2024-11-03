@@ -10,6 +10,10 @@ const contact2p = document.getElementById("contact2p");
 const contactName = document.getElementById("contact-name");
 const contactEmail = document.getElementById("contact-email");
 const contactMessage = document.getElementById("your-message");
+const introData = document.getElementById("data-foreword");
+const introWeb = document.getElementById("web-dev-foreword");
+const introSoftware = document.getElementById("software-dev-foreword");
+const introGame = document.getElementById("game-dev-foreword");
 const sendBtn = document.getElementById("sendBtn");
 const message = document.getElementById("message");
 const navBar = document.getElementById("nav-bar");
@@ -155,6 +159,10 @@ languageBtn.addEventListener('click', () => {
         contactMessage.textContent = "メッセージ："
         message.placeholder = "作ってほしいものあるんですが、"
         sendBtn.textContent = "送信"
+        introData.textContent = "こちらのプロジェクトには、ウェブスクレイピング、データのクリーニング、そしてデータの可視化用のスクリプトが含まれています。これらは、様々な日本企業向けに作成したプロジェクトおよび個人的なプロジェクトです。Python、Jupyter Notebook、Pandas、Numpyなどを使用して構築しています。詳細については、クリックしてください。"
+        introWeb.textContent = "こちらは私が制作したウェブサイトの一部です。Django、Ruby on Rails、バニラJavaScriptなど、さまざまなフレームワークを使用しています。CSSはすべて自分で記述しています。詳細については、クリックしてください。"
+        introSoftware.textContent = "こちらは、Python、C++、Rubyで開発したさまざまなソフトウェアです。また、私が設計し指導した夏のPythonプログラミングコースも含まれています。"
+        introGame.textContent = "ゲーム制作も好きで、これらはPythonのPygameライブラリ、Canvasを使用したJavaScript、およびC++で作成しました。"
         } else if (currentLanguage === "Japanese") {
         currentLanguage = "English"
         languageBtn.textContent = "日本語"
@@ -171,5 +179,9 @@ languageBtn.addEventListener('click', () => {
         contactMessage.textContent = "Your Message:"
         message.placeholder = "Hi, are you able to make a ...?"
         sendBtn.textContent = "Send"
+        introData.textContent = "These projects include scripts for web scraping, data cleaning and visualisations. These are projects I have made for various Japanese companies, as well as personal projects. These are built using Python, Jupyter Notebook, Pandas, Numpy etc. Please click on them for more details."
+        introWeb.textContent = "Here are some websites I have built. I have used a variety of frameworks here such as Django, Ruby on Rails, and vanilla JavaScript. I write the CSS myself. Click on them for more details."
+        introSoftware.textContent = "Here are some of the various software I have built in python, C++ and Ruby. I have included a summer python programming course that I designed and taught here, too."
+        introGame.textContent = "I also like to make games. These were made with the pygame python library, JavaScript using canvas, and C++."
         }
     });
