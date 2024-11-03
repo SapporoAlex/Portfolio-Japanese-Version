@@ -790,7 +790,7 @@ footer li a {
           transform: translateX(5px) translateY(10px);
         }
         50% {
-          transform: translateX(60px) translateY(50px); /* Distance to move forward */
+          transform: translateX(30px) translateY(50px); /* Distance to move forward */
         }
         100% {
           transform: translateX(5px) translateY(10px); /* Back to the starting point */
