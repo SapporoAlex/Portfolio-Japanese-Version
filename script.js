@@ -185,3 +185,61 @@ languageBtn.addEventListener('click', () => {
         introGame.textContent = "I also like to make games. These were made with the pygame python library, JavaScript using canvas, and C++."
         }
     });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const certBoxes = document.querySelectorAll(".cert-box");
+
+  const observerOptions = {
+    threshold: 0.2, // Trigger when 20% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible"); // Add the visible class
+        observer.unobserve(entry.target); // Stop observing once visible
+      }
+    });
+  }, observerOptions);
+
+  certBoxes.forEach(box => observer.observe(box)); // Observe each .cert-box
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+  const observerOptions = {
+    threshold: 0.2, // Trigger when 20% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible"); // Add the visible class
+        observer.unobserve(entry.target); // Stop observing once visible
+      }
+    });
+  }, observerOptions);
+
+  portfolioItems.forEach(item => observer.observe(item)); // Observe each .portfolio-item
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const portfolioItems = document.querySelectorAll(".language-item");
+
+  const observerOptions = {
+    threshold: 0.2, // Trigger when 20% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible"); // Add the visible class
+        observer.unobserve(entry.target); // Stop observing once visible
+      }
+    });
+  }, observerOptions);
+
+  portfolioItems.forEach(item => observer.observe(item)); // Observe each .portfolio-item
+});
