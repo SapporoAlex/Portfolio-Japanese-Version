@@ -695,6 +695,8 @@ font-size: 40px;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 #contact form {
@@ -1092,6 +1094,11 @@ footer li a {
         align-content: top;
         justify-content: top;
         margin-bottom: 20vh;
+    }
+
+    #contact-message {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     #contact form {
