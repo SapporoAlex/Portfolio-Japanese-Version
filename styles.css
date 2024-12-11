@@ -44,9 +44,9 @@ body {
     outline: #007BFF, solid, 10px;
 }
 
-#nav-bar p {
-    margin-top: 7px;
+#nav-bar p {
     color: white;
+    padding-top: 10px;
     padding-bottom: 10px;
     font-size: 20px;
     text-decoration: none;
@@ -301,7 +301,7 @@ body {
 
 #portfolio-intro {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     height: 40%;
     background-color: rgb(0, 0, 40);
     color: white;
