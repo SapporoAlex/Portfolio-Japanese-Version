@@ -984,6 +984,8 @@ footer li a {
     }
     
     #contact-message {
+        margin-left: 5%;
+        margin-right: 5%;
         display: flex;
         flex-direction: column;
         justify-items: center;
