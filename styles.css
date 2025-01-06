@@ -262,7 +262,7 @@ body {
 
 #codedamn {
     position: relative;
-    top: 75px;
+    top: 705px;
 }
 
 #fcc {
@@ -295,10 +295,10 @@ body {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
   
-  .language-item.visible {
+.language-item.visible {
     opacity: 1;
     transform: translateY(0); /* End position */
-  }
+}
 
 #portfolio {
     text-align: center;
