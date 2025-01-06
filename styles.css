@@ -44,7 +44,8 @@ body {
     outline: #007BFF, solid, 10px;
 }
 
-#nav-bar p {
+#nav-bar p {
+
     color: white;
     margin-top: 5px;
     padding-top: 10px;
@@ -234,7 +235,7 @@ body {
 .certs-text {
     background-color: #ffffff;
     border-radius: 5px;
-    color: rgb(0, 0, 0);
+    color: rgb(14, 14, 14);
     padding: 10px;
 }
 
@@ -246,15 +247,20 @@ body {
 
 #curtin {
     position: relative;
-    top: 225px;
+    top: 300px;
 }
 
 #jlpt {
     position: relative;
-    top: 150px;
+    top: 225px;
 }
 
 #coursera {
+    position: relative;
+    top: 150px;
+}
+
+#codedamn {
     position: relative;
     top: 75px;
 }
@@ -920,12 +926,16 @@ footer li a {
 
     .cert-logo {
         padding: 5px;
-        width: 50vw;
+        width: 200px;
         height: auto;
     }
 
     #coursera {
         top: -10px;
+    }
+    
+    #codedamn {
+        top: -20px;
     }
     
     .languages-grid {
@@ -1055,7 +1065,6 @@ footer li a {
         margin-bottom: 30px;
     }
 
-
     #curtin {
         position: relative;
         top: 10px;
@@ -1069,6 +1078,11 @@ footer li a {
     #coursera {
         position: relative;
         top: -30px;
+    }
+
+    #codedamn {
+        position: relative;
+        top: -20px;
     }
     
     #fcc {
