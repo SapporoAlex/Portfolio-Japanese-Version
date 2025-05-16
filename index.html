@@ -1,577 +1,1012 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Standard Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    
-    <!-- Apple Touch Icon (for iOS devices) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    
-    <!-- Android/Chrome Icon -->
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
-    
-    <!-- Fallback ICO file (for older browsers) -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Alex McKinley</title>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 
-<header>
-    <span class="section" id="nav-bar">
+    <!-- Apple Touch Icon (for iOS devices) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+    <!-- Android/Chrome Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="android-chrome-512x512.png"
+    />
+
+    <!-- Fallback ICO file (for older browsers) -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Alex McKinley</title>
+  </head>
+  <body>
+    <header>
+      <span class="section" id="nav-bar">
         <p id="about-me-button">About Me</p>
         <p id="portfolio-button">Portfolio</p>
         <p id="contact-button">Contact</p>
         <p id="language-button">日本語</p>
-    </span>
-</header>
+      </span>
+    </header>
 
-<button onclick="topFunction()" id="top-button"></button>
+    <button onclick="topFunction()" id="top-button"></button>
 
-<div class="section" id="hero">
-    <h1 id="name"><strong>Alex McKinley</strong></h1>
-    <h2 id="job"><strong>Sapporo IT Solutions</strong></h2>
-    <button id="call-to-action">Contact Me</button>
-</div>
+    <div class="section" id="hero">
+      <h1 id="name"><strong>Alex McKinley</strong></h1>
+      <h2 id="job"><strong>Sapporo IT Solutions</strong></h2>
+      <button id="call-to-action">Contact Me</button>
+    </div>
 
-<div class="section" id="about-me-section">
-    <div id="about-me-top">
+    <div class="section" id="about-me-section">
+      <div id="about-me-top">
         <h1 id="about-me-title">About Me</h1>
         <div id="top-lower">
-            <div id="about-me-top-left">
-                <img id="profile-img" src="static/imgs/profile.png" alt="Alexander Russell McKinley">
-            </div>
-            <div id="about-me-top-right">
-                <p id="about1p">I am a programmer based in Sapporo. I work with companies and individuals to create IT solutions tailored to their needs. I am proficient in a variety of languages and frameworks, and work with clients to choose the best tools to accomplish their goals.</p>
-                <p id="about2p">If you need help building or maintaining websites, scraping up-to-date data, automation, software or something else unique to your needs, contact me for a free consultation.</p>
-            </div>
+          <div id="about-me-top-left">
+            <img
+              id="profile-img"
+              src="static/imgs/profile.png"
+              alt="Alexander Russell McKinley"
+            />
+          </div>
+          <div id="about-me-top-right">
+            <p id="about1p">
+              I am a programmer based in Sapporo. I work with companies and
+              individuals to create IT solutions tailored to their needs. I am
+              proficient in a variety of languages and frameworks, and work with
+              clients to choose the best tools to accomplish their goals.
+            </p>
+            <p id="about2p">
+              If you need help building or maintaining websites, scraping
+              up-to-date data, automation, software or something else unique to
+              your needs, contact me for a free consultation.
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="section" id="about-me-center">
+      <div class="section" id="about-me-center">
         <div id="top-white-triangle"></div>
-            <div class="cert-box" id="curtin">
-                <img class="cert-logo" src="static/logos/CurtinUni_Logo.svg.png" alt="Curtin Unversity">
-                <div class="certs-text">
-                    <p class="list-item" id="bachelor">Bachelor of Education</p>
-                </div>
-            </div>
-            <div class="cert-box" id="jlpt">
-                <img class="cert-logo" src="static/logos/Japanese-Language_Proficiency_Test_logo.svg.png" alt="Japanese Language Proficiency Test, N2">
-                <div class="certs-text">
-                    <p class="list-item" id="n2">N2 Japanese Language Proficiency Test</p>
-                </div>
-            </div>
-            <div class="cert-box" id="coursera">
-                <img class="cert-logo" src="static/logos/coursera.png" alt="Coursera">
-                <div class="certs-text">
-                    <p class="list-item">Build a free website with WordPress</p>
-                </div>
-            </div>
-            <div class="cert-box" id="codedamn">
-                <img class="cert-logo" src="static/logos/codedamn.jpg" alt="codedamn">
-                <div class="certs-text">
-                    <p class="list-item">Mastering C++ Programming</p>
-                </div>
-            </div>
-            <div class="cert-box" id="fcc">
-                <img class="cert-logo" src="static/logos/FreeCodeCamp_logo.png" alt="Free Code Camp">
-                <div class="certs-text">
-                    <p class="list-item" id="js-algorithms">JavaScript Algorithms & Data Structures</p>
-                    <p class="list-item" id="responsive-web-design">Responsive Web Design</p>
-                    <p class="list-item" id="data-analysis-cert">Data Analysis with Python</p>
-                    <p class="list-item" id="scientific-computing">Scientific Computing with Python</p>
-                </div>
-            </div>
+        <div class="cert-box" id="curtin">
+          <img
+            class="cert-logo"
+            src="static/logos/CurtinUni_Logo.svg.png"
+            alt="Curtin Unversity"
+          />
+          <div class="certs-text">
+            <p class="list-item" id="bachelor">Bachelor of Education</p>
+          </div>
+        </div>
+        <div class="cert-box" id="jlpt">
+          <img
+            class="cert-logo"
+            src="static/logos/Japanese-Language_Proficiency_Test_logo.svg.png"
+            alt="Japanese Language Proficiency Test, N2"
+          />
+          <div class="certs-text">
+            <p class="list-item" id="n2">
+              N2 Japanese Language Proficiency Test
+            </p>
+          </div>
+        </div>
+        <div class="cert-box" id="coursera">
+          <img
+            class="cert-logo"
+            src="static/logos/coursera.png"
+            alt="Coursera"
+          />
+          <div class="certs-text">
+            <p class="list-item">Build a free website with WordPress</p>
+          </div>
+        </div>
+        <div class="cert-box" id="codedamn">
+          <img
+            class="cert-logo"
+            src="static/logos/codedamn.jpg"
+            alt="codedamn"
+          />
+          <div class="certs-text">
+            <p class="list-item">Mastering C++ Programming</p>
+          </div>
+        </div>
+        <div class="cert-box" id="fcc">
+          <img
+            class="cert-logo"
+            src="static/logos/FreeCodeCamp_logo.png"
+            alt="Free Code Camp"
+          />
+          <div class="certs-text">
+            <p class="list-item" id="js-algorithms">
+              JavaScript Algorithms & Data Structures
+            </p>
+            <p class="list-item" id="responsive-web-design">
+              Responsive Web Design
+            </p>
+            <p class="list-item" id="data-analysis-cert">
+              Data Analysis with Python
+            </p>
+            <p class="list-item" id="scientific-computing">
+              Scientific Computing with Python
+            </p>
+          </div>
+        </div>
         <div id="bottom-white-triangle"></div>
-    </div>
-    <div class="section" id="about-me-bottom">
+      </div>
+      <div class="section" id="about-me-bottom">
         <div class="languages-grid">
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/python.png" alt="Python">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/django.png" alt="Django">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/pandas.png" alt="Pandas">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/mpl.png" alt="matplot lib">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/np.png" alt="numpy">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/jupyter.png" alt="jupyter notebook">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/pw.png" alt="playwright">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/pygame.png" alt="Pygame library">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/java.png" alt="java">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/kotlin.png" alt="kotlin">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/C++.png" alt="c++">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/js.png" alt="JavaScript">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/ts.png" alt="TypeScript">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/html.png" alt="Hyper Text Markup Language 5">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/css.png" alt="Cascading Style Sheets">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/sqlite.png" alt="SQL lite">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/mysql.png" alt="My SQL">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/ruby.png" alt="Ruby">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/rails.png" alt="Ruby on Rails">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/git.png" alt="Git">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/docker.png" alt="Docker">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/wp.png" alt="WordPress">
-            </div>
-            <div class="language-item">
-                <img class="lang-logo" src="static/tools/excel.png" alt="Microsoft Excel">
-            </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/js.png" alt="JavaScript" />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/ts.png" alt="TypeScript" />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/react.png" alt="React" />
+          </div>
+          <div class="language-item">
+            <img
+              class="lang-logo"
+              src="static/tools/html.png"
+              alt="Hyper Text Markup Language 5"
+            />
+          </div>
+          <div class="language-item">
+            <img
+              class="lang-logo"
+              src="static/tools/css.png"
+              alt="Cascading Style Sheets"
+            />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/python.png" alt="Python" />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/django.png" alt="Django" />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/pandas.png" alt="Pandas" />
+          </div>
+          <div class="language-item">
+            <img
+              class="lang-logo"
+              src="static/tools/mpl.png"
+              alt="matplot lib"
+            />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/np.png" alt="numpy" />
+          </div>
+          <div class="language-item">
+            <img
+              class="lang-logo"
+              src="static/tools/jupyter.png"
+              alt="jupyter notebook"
+            />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/pw.png" alt="playwright" />
+          </div>
+          <div class="language-item">
+            <img
+              class="lang-logo"
+              src="static/tools/pygame.png"
+              alt="Pygame library"
+            />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/java.png" alt="java" />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/kotlin.png" alt="kotlin" />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/C++.png" alt="c++" />
+          </div>
+          <div class="language-item">
+            <img
+              class="lang-logo"
+              src="static/tools/sqlite.png"
+              alt="SQL lite"
+            />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/mysql.png" alt="My SQL" />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/ruby.png" alt="Ruby" />
+          </div>
+          <div class="language-item">
+            <img
+              class="lang-logo"
+              src="static/tools/rails.png"
+              alt="Ruby on Rails"
+            />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/git.png" alt="Git" />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/docker.png" alt="Docker" />
+          </div>
+          <div class="language-item">
+            <img class="lang-logo" src="static/tools/wp.png" alt="WordPress" />
+          </div>
+          <div class="language-item">
+            <img
+              class="lang-logo"
+              src="static/tools/excel.png"
+              alt="Microsoft Excel"
+            />
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div id="portfolio-intro">
-    <h1 id="portfolio-title">My Portfolio</h1>
-</div>
-<section id="portfolio">
-    <div class="section-heading">
+    <div id="portfolio-intro">
+      <h1 id="portfolio-title">My Portfolio</h1>
+    </div>
+    <section id="portfolio">
+      <div class="section-heading">
         <div id="data-anim">
-            <div id="graph-sheet">
-                <div class="bar-anim" id="bar-one"></div>
-                <div class="bar-anim" id="bar-two"></div>
-                <div class="bar-anim" id="bar-three"></div>
-            </div>        
+          <div id="graph-sheet">
+            <div class="bar-anim" id="bar-one"></div>
+            <div class="bar-anim" id="bar-two"></div>
+            <div class="bar-anim" id="bar-three"></div>
+          </div>
         </div>
         <div class="title-body">
-            <h2 class="section-title" id="data-title">Data</h2>        
-            <p class="section-foreword" id="data-foreword">These projects include scripts for web scraping, data cleaning and visualisations. These are projects I have made for various Japanese companies, as well as personal projects. These are built using Python, Jupyter Notebook, Pandas, Numpy etc. Please click on them for more details.</p>
+          <h2 class="section-title" id="data-title">Data</h2>
+          <p class="section-foreword" id="data-foreword">
+            These projects include scripts for web scraping, data cleaning and
+            visualisations. These are projects I have made for various Japanese
+            companies, as well as personal projects. These are built using
+            Python, Jupyter Notebook, Pandas, Numpy etc. Please click on them
+            for more details.
+          </p>
         </div>
-    </div>
-    <div class="portfolio-grid">
+      </div>
+      <div class="portfolio-grid">
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Hotel-Reservation-Cancellation-Daily-Update/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/1.jpg" alt="Hotel Reservation Daily update">
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Weekly-Earnings-Data-Update/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/2.jpg" alt="Weekly Earnings data update">
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/KPI-Tracker/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/4.jpg" alt="KPI tracker">
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/OpenWeather-ETL-data-pipeline/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/5.jpg" alt="ETL data pipeline">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Hotel-Reservation-Cancellation-Daily-Update/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/data/1.jpg"
+              alt="Hotel Reservation Daily update"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Data-Visualisation-with-Seaborn-Matplotlib/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/6.jpg" alt="data visualisation with seaborn">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Weekly-Earnings-Data-Update/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/data/2.jpg"
+              alt="Weekly Earnings data update"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Chess-Ratings-Tracker-with-Chess.com-API/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/7.jpg" alt="Chess ratings tracker">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/KPI-Tracker/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/data/4.jpg" alt="KPI tracker" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Blogpost-scraper/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/8.png" alt="blogpost scraper">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/OpenWeather-ETL-data-pipeline/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/data/5.jpg" alt="ETL data pipeline" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/AI-Agent-Translator" target="_blank">
-                <img src="static/project_imgs/data/14.png" alt="AI Agent Japanese to English translator">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Data-Visualisation-with-Seaborn-Matplotlib/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/data/6.jpg"
+              alt="data visualisation with seaborn"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Excel-to-Deepl-Translator/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/9.jpg" alt="Japanese to English translator with Deepl">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Chess-Ratings-Tracker-with-Chess.com-API/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/data/7.jpg"
+              alt="Chess ratings tracker"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Translator-GoogleTrans-/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/13.png" alt="Japanese to English translator with GoogleTrans">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Blogpost-scraper/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/data/8.png" alt="blogpost scraper" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/MTG-new-card-price-webscraper/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/10.png" alt="card price webscraper">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/AI-Agent-Translator"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/data/14.png"
+              alt="AI Agent Japanese to English translator"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Email-Parser/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/11.jpg" alt="email parser">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Excel-to-Deepl-Translator/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/data/9.jpg"
+              alt="Japanese to English translator with Deepl"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Basketball-Monster-to-Google-Sheets/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/data/12.png" alt="Webscraper to Google Sheets">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Translator-GoogleTrans-/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/data/13.png"
+              alt="Japanese to English translator with GoogleTrans"
+            />
+          </a>
         </div>
-    </div>
-    
+        <div class="portfolio-item">
+          <a
+            href="https://github.com/SapporoAlex/MTG-new-card-price-webscraper/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/data/10.png"
+              alt="card price webscraper"
+            />
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a
+            href="https://github.com/SapporoAlex/Email-Parser/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/data/11.jpg" alt="email parser" />
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a
+            href="https://github.com/SapporoAlex/Basketball-Monster-to-Google-Sheets/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/data/12.png"
+              alt="Webscraper to Google Sheets"
+            />
+          </a>
+        </div>
+      </div>
 
-    <div class="section-heading">
+      <div class="section-heading">
         <div id="web-anim">
-            <div id="left-web">
-                <div class="line-web" id="line1-web"></div>
-                <div class="line-web" id="line2-web"></div>
-                <div class="line-web" id="line3-web"></div>
-                <div class="line-web" id="line4-web"></div>
-                <div class="line-web" id="line5-web"></div>
-                <div class="line-web" id="line6-web"></div>
-            </div>
-            <div id="right-web">
-                <div id="square-web"></div>
-            </div>
+          <div id="left-web">
+            <div class="line-web" id="line1-web"></div>
+            <div class="line-web" id="line2-web"></div>
+            <div class="line-web" id="line3-web"></div>
+            <div class="line-web" id="line4-web"></div>
+            <div class="line-web" id="line5-web"></div>
+            <div class="line-web" id="line6-web"></div>
+          </div>
+          <div id="right-web">
+            <div id="square-web"></div>
+          </div>
         </div>
         <div class="title-body">
-            <h2>Web Development</h2>
-            <p class="section-foreword" id="web-dev-foreword">Here are some websites I have built. I have used a variety of frameworks here such as Django, Ruby on Rails, and vanilla JavaScript. I write the CSS myself. Click on them for more details.</p>
+          <h2>Web Development</h2>
+          <p class="section-foreword" id="web-dev-foreword">
+            Here are some websites I have built. I have used a variety of
+            frameworks here such as Django, Ruby on Rails, and vanilla
+            JavaScript. I write the CSS myself. Click on them for more details.
+          </p>
         </div>
-    </div>
+      </div>
 
-    <div class="portfolio-grid">
+      <div class="portfolio-grid">
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Games-Site/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/web_dev/hamster games.jpg" alt="hamster games gaming website">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Games-Site/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/web_dev/hamster games.jpg"
+              alt="hamster games gaming website"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Student-Portal-Site/blob/master/README.md" target="_blank">
-                <img src="static/project_imgs/web_dev/portal.jpg" alt="Student Portal Site">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Student-Portal-Site/blob/master/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/web_dev/portal.jpg"
+              alt="Student Portal Site"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://sapporoalex.github.io/Karuta-Reader/" target="_blank">
-                <img src="static/project_imgs/web_dev/KarutaReader.jpg" alt="Karuta Reader">
-            </a>
+          <a
+            href="https://sapporoalex.github.io/Karuta-Reader/"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/web_dev/KarutaReader.jpg"
+              alt="Karuta Reader"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://sapporoalex.github.io/Soundboard/" target="_blank">
-                <img src="static/project_imgs/web_dev/wackySounds.jpg" alt="Wacky Sounds soundboard">
-            </a>
+          <a href="https://sapporoalex.github.io/Soundboard/" target="_blank">
+            <img
+              src="static/project_imgs/web_dev/wackySounds.jpg"
+              alt="Wacky Sounds soundboard"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://sapporoalex.github.io/Won-to-USD-Converter/" target="_blank">
-                <img src="static/project_imgs/web_dev/converter.jpg" alt="Won to USD converter">
-            </a>
+          <a
+            href="https://sapporoalex.github.io/Won-to-USD-Converter/"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/web_dev/converter.jpg"
+              alt="Won to USD converter"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Travel-Blog-Site/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/web_dev/travel-blog.jpg" alt="Hokkaido Travel Blog Site">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Travel-Blog-Site/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/web_dev/travel-blog.jpg"
+              alt="Hokkaido Travel Blog Site"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://sapporoalex.github.io/Magnus-Carlsen-landing-page/" target="_blank">
-                <img src="static/project_imgs/web_dev/magnus.png">
-            </a>
+          <a
+            href="https://sapporoalex.github.io/Magnus-Carlsen-landing-page/"
+            target="_blank"
+          >
+            <img src="static/project_imgs/web_dev/magnus.png" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Hanashi-Blog-Site/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/web_dev/1.jpg" alt="Hanashi blog site">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Hanashi-Blog-Site/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/web_dev/1.jpg"
+              alt="Hanashi blog site"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Food-log-app/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/web_dev/fl1.jpg" alt="Food log app">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Food-log-app/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/web_dev/fl1.jpg" alt="Food log app" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Halloween-Page/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/web_dev/halloween.png" alt="Halloween Page">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Halloween-Page/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/web_dev/halloween.png"
+              alt="Halloween Page"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Portfolio-Website/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/web_dev/2.jpg" alt="portfolio website">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Portfolio-Website/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/web_dev/2.jpg"
+              alt="portfolio website"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/PyShop-Website-Made-in-Django/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/web_dev/3.jpg" alt="pyshop website">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/PyShop-Website-Made-in-Django/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/web_dev/3.jpg" alt="pyshop website" />
+          </a>
         </div>
-    </div>
-    
-    <div class="section-heading">
+      </div>
+
+      <div class="section-heading">
         <div id="software-anim">
-            <div class="cog">
-            </div>
-            <div class="cog2">
-            </div>
+          <div class="cog"></div>
+          <div class="cog2"></div>
         </div>
         <div class="title-body">
-        <h2>Software Development</h2>
-        <p class="section-foreword" id="software-dev-foreword">Here are some of the various software I have built in python, C++ and Ruby. I have included a summer python programming course that I designed and taught here, too.</p>
+          <h2>Software Development</h2>
+          <p class="section-foreword" id="software-dev-foreword">
+            Here are some of the various software I have built in python, C++
+            and Ruby. I have included a summer python programming course that I
+            designed and taught here, too.
+          </p>
         </div>
-    </div>
-    <div class="portfolio-grid">
+      </div>
+      <div class="portfolio-grid">
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/JS-Minifier/blob/main/ReadMe.md" target="_blank">
-                <img src="static/project_imgs/software/JSMinifier.png" alt="JavaScript minification application">
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Monster-Dice-Android/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/web_dev/monsterDice.jpg" alt="Monster dice Android App">
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Roll-Call-Web-App/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/web_dev/rollcall.jpg" alt="Roll Call Web App">
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Employee-Timecard-Shift-Calculator/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/1.jpg" alt="employee timecard app">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/JS-Minifier/blob/main/ReadMe.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/JSMinifier.png"
+              alt="JavaScript minification application"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Employee-Timecard-Shift-Calculator/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/2.jpg" alt="employee timecard app">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Monster-Dice-Android/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/web_dev/monsterDice.jpg"
+              alt="Monster dice Android App"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Employee-Time-Card-App/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/timecard.jpg" alt="employee timecard app">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Roll-Call-Web-App/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/web_dev/rollcall.jpg"
+              alt="Roll Call Web App"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/2024-Summer-Programming-Course/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/3.jpg" alt="Summer programming course">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Employee-Timecard-Shift-Calculator/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/1.jpg"
+              alt="employee timecard app"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Shortest-Path-Visualiser/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/4.jpg" alt="shortest path visualiser">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Employee-Timecard-Shift-Calculator/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/2.jpg"
+              alt="employee timecard app"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Mean-Variance-Standard-Deviation-Calculator/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/5.jpg" alt="mean variance standard deviation calculator">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Employee-Time-Card-App/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/timecard.jpg"
+              alt="employee timecard app"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/PDF-Translator/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/6.jpg" alt="PDF translator">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/2024-Summer-Programming-Course/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/3.jpg"
+              alt="Summer programming course"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Automated-Invoice/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/7.jpg" alt="Invoice generator">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Shortest-Path-Visualiser/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/4.jpg"
+              alt="shortest path visualiser"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/TV-Scheduler/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/8.png" alt="tv scheduler">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Mean-Variance-Standard-Deviation-Calculator/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/5.jpg"
+              alt="mean variance standard deviation calculator"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Voice-Driven-Daily-Activity-Logger/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/9.jpg" alt="voice detecting journal">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/PDF-Translator/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/6.jpg"
+              alt="PDF translator"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/QR-Code-Generator/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/10.png" alt="QR code generator">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Automated-Invoice/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/7.jpg"
+              alt="Invoice generator"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Event-Schedule-Builder/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/11.jpg" alt="event schedule builder">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/TV-Scheduler/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/software/8.png" alt="tv scheduler" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Text-Editor-with-Emojis/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/12.jpg" alt="text editor with emojis">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Voice-Driven-Daily-Activity-Logger/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/9.jpg"
+              alt="voice detecting journal"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Sudoku-Solver/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/13.png" alt="sudoku solver">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/QR-Code-Generator/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/10.png"
+              alt="QR code generator"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Maths-Quiz/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/14.png" alt="maths quiz">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Event-Schedule-Builder/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/11.jpg"
+              alt="event schedule builder"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Basic-Calculator/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/15.png" alt="C++ calculator">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Text-Editor-with-Emojis/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/12.jpg"
+              alt="text editor with emojis"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Calculator/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/calc.jpg" alt="Ruby calculator">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Sudoku-Solver/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/13.png"
+              alt="sudoku solver"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Roman-Numeral-Converter/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/rnc.jpg" alt="Roman Numeral Calculator">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Maths-Quiz/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/software/14.png" alt="maths quiz" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/DND-Monster-Attack-Roller-GUI/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/mar.jpg" alt="Monster Attack Roller">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Basic-Calculator/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/15.png"
+              alt="C++ calculator"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Marcus-Aurelius-Text-Editor/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/software/mate.jpg" alt="Marcus Aurelius Text Editor">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Calculator/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/calc.jpg"
+              alt="Ruby calculator"
+            />
+          </a>
         </div>
-    </div>
-    <div class="section-heading">
-
+        <div class="portfolio-item">
+          <a
+            href="https://github.com/SapporoAlex/Roman-Numeral-Converter/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/rnc.jpg"
+              alt="Roman Numeral Calculator"
+            />
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a
+            href="https://github.com/SapporoAlex/DND-Monster-Attack-Roller-GUI/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/mar.jpg"
+              alt="Monster Attack Roller"
+            />
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a
+            href="https://github.com/SapporoAlex/Marcus-Aurelius-Text-Editor/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/software/mate.jpg"
+              alt="Marcus Aurelius Text Editor"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="section-heading">
         <div id="games-anim">
-            <div id="game-paddle-1"></div>
-            <div id="game-ball"></div>
-            <div id="game-paddle-2"></div>
+          <div id="game-paddle-1"></div>
+          <div id="game-ball"></div>
+          <div id="game-paddle-2"></div>
         </div>
         <div class="title-body">
-        <h2>Game Development</h2>
-        <p class="section-foreword" id="game-dev-foreword">I also like to make games. These were made with the pygame python library, JavaScript using canvas, Java, and C++.</p>
+          <h2>Game Development</h2>
+          <p class="section-foreword" id="game-dev-foreword">
+            I also like to make games. These were made with the pygame python
+            library, JavaScript using canvas, Java, and C++.
+          </p>
         </div>
-    </div>
-    <div class="portfolio-grid">
+      </div>
+      <div class="portfolio-grid">
         <div class="portfolio-item">
-            <a href="https://sapporoalex.github.io/2d-Drone-Shooter-Game/" target="_blank">
-                <img src="static/project_imgs/games/bn.png" alt="2d-shooter">
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Java-Platformer" target="_blank">
-                <img src="static/project_imgs/games/wbiml.jpg" alt="Java Platformer">
-            </a>
-        </div>
-        <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Cat-Owner/tree/main" target="_blank">
-                <img src="static/project_imgs/games/catOwner.png" alt="Cat Owner game">
-            </a>
+          <a
+            href="https://sapporoalex.github.io/2d-Drone-Shooter-Game/"
+            target="_blank"
+          >
+            <img src="static/project_imgs/games/bn.png" alt="2d-shooter" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Game-African-President/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/games/1.jpg" alt="African President text based RPG">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Java-Platformer"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/games/wbiml.jpg"
+              alt="Java Platformer"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Game-Hammy-Stop/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/games/2.jpg" alt="Hammy Stop game">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Cat-Owner/tree/main"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/games/catOwner.png"
+              alt="Cat Owner game"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Park-Text-Based-Adventure/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/games/3.jpg" alt="the park, text based RPG in C++">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Game-African-President/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/games/1.jpg"
+              alt="African President text based RPG"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Game-Dungeon-Quest/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/games/4.jpg" alt="Dungeon Quest Game">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Game-Hammy-Stop/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/games/2.jpg" alt="Hammy Stop game" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Game-Defender/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/games/5.jpg" alt="Defender Game">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Park-Text-Based-Adventure/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/games/3.jpg"
+              alt="the park, text based RPG in C++"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Hammy-Racing-2024/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/games/6.jpg" alt="Hammy Racing">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Game-Dungeon-Quest/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/games/4.jpg"
+              alt="Dungeon Quest Game"
+            />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Tetris/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/games/7.jpg" alt="Tetris">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Game-Defender/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/games/5.jpg" alt="Defender Game" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Game-Unicorn-Jump/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/games/8.jpg" alt="Unicorn jump">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Hammy-Racing-2024/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/games/6.jpg" alt="Hammy Racing" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Game-Snake/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/games/snake.jpg" alt="snake">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Tetris/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/games/7.jpg" alt="Tetris" />
+          </a>
         </div>
         <div class="portfolio-item">
-            <a href="https://github.com/SapporoAlex/Naughts-Crosses/blob/main/README.md" target="_blank">
-                <img src="static/project_imgs/games/nc.jpg" alt="naughts and crosses">
-            </a>
+          <a
+            href="https://github.com/SapporoAlex/Game-Unicorn-Jump/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/games/8.jpg" alt="Unicorn jump" />
+          </a>
         </div>
-    </div>
-</section>
+        <div class="portfolio-item">
+          <a
+            href="https://github.com/SapporoAlex/Game-Snake/blob/main/README.md"
+            target="_blank"
+          >
+            <img src="static/project_imgs/games/snake.jpg" alt="snake" />
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a
+            href="https://github.com/SapporoAlex/Naughts-Crosses/blob/main/README.md"
+            target="_blank"
+          >
+            <img
+              src="static/project_imgs/games/nc.jpg"
+              alt="naughts and crosses"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
 
-<section id="contact">
-<h2>Contact Me</h2>
-    <div id="contact-message">
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div id="contact-message">
         <p id="contact1p">Send me a message for a free consultation.</p>
         <p id="contact2p">I'd love to hear from you.</p>
-    </div>
-    <form action="https://formspree.io/f/xeojyedo" method="POST">
+      </div>
+      <form action="https://formspree.io/f/xeojyedo" method="POST">
         <label for="name" id="contact-name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required />
 
         <label for="email" id="contact-email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required />
 
         <label for="message" id="your-message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Hi, are you able to make a ...?" required></textarea>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Hi, are you able to make a ...?"
+          required
+        ></textarea>
 
         <button type="submit" id="sendBtn">Send</button>
-    </form>
+      </form>
+    </section>
+  </body>
 
-</section>
-</body>
-
-<footer>
+  <footer>
     <ul id="links">
-        <li><a href="https://github.com/SapporoAlex" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/alex-mckinley-257266296/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li>
+        <a href="https://github.com/SapporoAlex" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/alex-mckinley-257266296/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </li>
     </ul>
-</footer>
-<script src="script.min.js"></script>
+  </footer>
+  <script src="script.min.js"></script>
 </html>
-
