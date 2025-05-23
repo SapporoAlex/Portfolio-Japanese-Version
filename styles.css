@@ -360,6 +360,9 @@ body {
   background-color: #00115a;
 }
 
+#line1-web {
+  top: 20px;
+}
 #line2-web {
   top: 25px;
 }
