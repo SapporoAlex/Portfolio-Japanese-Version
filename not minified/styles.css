@@ -938,13 +938,27 @@ footer li a {
       transform: translateX(10px) translateY(10px); /* Back to the starting point */
     }
   }
+  #nav-bar {
+    flex-direction: row;
+    height: auto;
+  }
 
   #nav-bar p {
+    font-size: 14px;
+    margin: 5px;
     padding: 0;
   }
 
-  .nav-btn {
-    padding: 0;
+  #hero h1 {
+    font-size: 40px;
+  }
+
+  #hero h2 {
+    font-size: 25px;
+  }
+
+  #hero button {
+    width: 70%;
   }
 
   #portfolio h1 {
