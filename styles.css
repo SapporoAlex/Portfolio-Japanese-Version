@@ -895,6 +895,7 @@ footer li a {
   }
 
   .languages-grid {
+    max-width: 300px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -910,6 +911,7 @@ footer li a {
 
   .language-item > img {
     width: 75px;
+    height: auto;
   }
 
   /* Graph Sheet */
@@ -952,10 +954,13 @@ footer li a {
 
   /* Web Line Animation */
 
+  .section-heading {
+    padding: 100px 0;
+  }
+
   #web-anim {
     position: absolute;
     display: flex;
-
     height: 400px;
     width: 90%;
     border: 5px solid var(--light-blue);
