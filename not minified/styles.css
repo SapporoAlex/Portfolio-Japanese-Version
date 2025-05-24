@@ -734,6 +734,7 @@ footer li a {
 /* Media queries for responsiveness */
 
 /* Small devices (phones, up to 600px) */
+
 @media (max-width: 600px) {
   @keyframes moveBackAndForth {
     0% {
@@ -936,6 +937,14 @@ footer li a {
     100% {
       transform: translateX(10px) translateY(10px); /* Back to the starting point */
     }
+  }
+
+  #nav-bar p {
+    padding: 0;
+  }
+
+  .nav-btn {
+    padding: 0;
   }
 
   #portfolio h1 {
