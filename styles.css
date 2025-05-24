@@ -60,7 +60,7 @@ body {
 /* Hero Section */
 #hero {
   position: relative;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   background: url("static/imgs/bg.jpg") center/cover no-repeat;
   display: flex;
