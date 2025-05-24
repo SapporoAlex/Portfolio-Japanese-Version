@@ -425,6 +425,7 @@ wrapper {
   width: 10vh;
   border: solid #00115a 2px;
 }
+
 /* Main cog */
 .cog {
   width: 40px;
@@ -899,6 +900,14 @@ footer li a {
     width: 100dvw;
   }
 
+  #profile-img {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    padding: 100px 0;
+    transition: transform 0.9s ease;
+  }
+
   .languages-grid {
     max-width: 100dvw;
     margin: 0 auto;
@@ -1064,6 +1073,9 @@ footer li a {
     height: 400px;
     width: 90%;
     border: 5px solid var(--light-blue);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
   }
 
   .cog,
@@ -1353,7 +1365,19 @@ footer li a {
     gap: 20px;
   }
 
-  .section-anim {
+  /* .bar-anim {
     display: none;
-  }
+  } */
+
+  /* #web-anim {
+    display: none;
+  } */
+
+  /* #data-anim {
+    display: none;
+  } */
+  /* 
+  #software-anim {
+    display: none;
+  } */
 }
