@@ -1,7 +1,8 @@
 /* General Reset and Base Styling */
 :root {
   --main-blue: #00115a;
-  --light-blue: #ffbb00;
+  --light-orange: #ffbb00;
+  --bright-gold: #fbff00;
 }
 
 html {
@@ -935,14 +936,15 @@ footer li a {
     background: transparent;
     height: 400px;
     width: 90%;
-    border: 5px solid var(--light-blue);
+    border: 5px solid var(--light-orange);
   }
 
   .bar-anim {
     position: absolute;
     bottom: 0;
     width: 20%;
-    background-color: var(--light-blue);
+    border-color: var(--light-orange);
+    background-color: var(--light-gold);
     transition: transform 2s ease;
     transform: scaleY(0);
   }
@@ -977,7 +979,7 @@ footer li a {
     display: flex;
     height: 400px;
     width: 90%;
-    border: 5px solid var(--light-blue);
+    border: 5px solid var(--light-orange);
     background: transparent;
     justify-content: center;
     margin-top: 150px;
@@ -999,39 +1001,40 @@ footer li a {
     left: 20px;
     width: 100%;
     height: 150px;
-    border: 5px solid var(--light-blue);
+    background-color: var(--light-gold);
+    border: 2px solid var(--light-orange);
     z-index: 1;
   }
   #line1-web {
     position: relative;
     width: 100%;
     height: 10%;
-    border: 2px solid var(--light-blue);
-    background-color: var(--light-blue);
+    background-color: var(--light-gold);
+    border: 2px solid var(--light-orange);
     top: 5%;
   }
   #line2-web {
     position: relative;
     width: 100%;
     height: 10%;
-    border: 2px solid var(--light-blue);
-    background-color: var(--light-blue);
+    background-color: var(--light-gold);
+    border: 2px solid var(--light-orange);
     top: 10%;
   }
   #line3-web {
     position: relative;
     width: 100%;
     height: 10%;
-    border: 2px solid var(--light-blue);
-    background-color: var(--light-blue);
+    background-color: var(--light-gold);
+    border: 2px solid var(--light-orange);
     top: 15%;
   }
   #line4-web {
     position: relative;
     width: 215%;
     height: 10%;
-    border: 2px solid var(--light-blue);
-    background-color: var(--light-blue);
+    background-color: var(--light-gold);
+    border: 2px solid var(--light-orange);
     top: 20%;
   }
 
@@ -1039,8 +1042,8 @@ footer li a {
     position: relative;
     width: 215%;
     height: 10%;
-    border: 2px solid var(--light-blue);
-    background-color: var(--light-blue);
+    background-color: var(--light-gold);
+    border: 2px solid var(--light-orange);
     top: 25%;
   }
 
@@ -1048,14 +1051,15 @@ footer li a {
     position: relative;
     width: 215%;
     height: 10%;
-    border: 2px solid var(--light-blue);
-    background-color: var(--light-blue);
+    background-color: var(--light-gold);
+    border: 2px solid var(--light-orange);
     top: 30%;
   }
 
   .line-web {
     position: absolute;
-    background-color: var(--light-blue);
+    background-color: var(--light-gold);
+    border: 2px solid var(--light-orange);
     transition: transform 2s ease;
     transform: scaleX(0);
   }
@@ -1072,7 +1076,7 @@ footer li a {
     right: 20px;
     height: 400px;
     width: 90%;
-    border: 5px solid var(--light-blue);
+    border: 2px solid var(--light-orange);
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -1080,7 +1084,8 @@ footer li a {
 
   .cog,
   .cog2 {
-    background: var(--light-blue);
+    background-color: var(--light-gold);
+    border: 2px solid var(--light-orange);
     border-radius: 50%;
     position: relative;
     animation: spin 5s linear infinite;
@@ -1106,9 +1111,10 @@ footer li a {
     position: absolute;
     left: -25px;
     top: -25px;
+    border: 2px solid var(--light-orange);
     background: repeating-conic-gradient(
       from 0deg,
-      var(--light-blue) 0deg 15deg,
+      var(--light-gold) 0deg 15deg,
       transparent 15deg 30deg
     );
     border-radius: 50%;
@@ -1151,7 +1157,7 @@ footer li a {
     background-color: transparent;
     height: 400px;
     width: 90%;
-    border: 5px solid var(--light-blue);
+    border: 2px solid var(--light-orange);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -1163,7 +1169,8 @@ footer li a {
     position: absolute;
     height: 20%;
     width: 5%;
-    background: var(--light-blue);
+    background-color: var(--light-gold);
+    border: 2px solid var(--light-orange);
     animation: moveUpAndDown 2s linear infinite;
   }
 
@@ -1178,7 +1185,8 @@ footer li a {
   #game-ball {
     width: 5%;
     height: 5%;
-    background: var(--light-blue);
+    background-color: var(--light-gold);
+    border: 2px solid var(--light-orange);
     position: absolute;
     animation: moveBackAndForth 2s linear infinite;
   }
