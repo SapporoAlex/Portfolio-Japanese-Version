@@ -1,7 +1,7 @@
 /* General Reset and Base Styling */
 :root {
   --main-blue: #00115a;
-  --light-blue: #8399fd;
+  --light-blue: #faffaf;
 }
 
 html {
@@ -1192,7 +1192,7 @@ footer li a {
   }
 
   #nav-bar p {
-    font-size: 12px;
+    font-size: 16px;
     margin: 5px;
     padding: 0;
   }
