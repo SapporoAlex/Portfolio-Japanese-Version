@@ -1,7 +1,6 @@
 /* General Reset and Base Styling */
 :root {
   --main-blue: #00115a;
-  --light-orange: #ffbb00;
   --bright-gold: #fbff00;
 }
 
@@ -936,14 +935,13 @@ footer li a {
     background: transparent;
     height: 400px;
     width: 90%;
-    border: 5px solid var(--light-orange);
+    border: 5px solid var(--bright-gold);
   }
 
   .bar-anim {
     position: absolute;
     bottom: 0;
     width: 20%;
-    border-color: var(--light-orange);
     background-color: var(--bright-gold);
     transition: transform 2s ease;
     transform: scaleY(0);
@@ -979,7 +977,7 @@ footer li a {
     display: flex;
     height: 400px;
     width: 90%;
-    border: 5px solid var(--light-orange);
+    border: 5px solid var(--bright-gold);
     background: transparent;
     justify-content: center;
     margin-top: 150px;
@@ -1001,8 +999,7 @@ footer li a {
     left: 20px;
     width: 100%;
     height: 150px;
-    background-color: var(--bright-gold);
-    border: 2px solid var(--light-orange);
+    border: 5px solid var(--bright-gold);
     z-index: 1;
   }
   #line1-web {
@@ -1010,7 +1007,7 @@ footer li a {
     width: 100%;
     height: 10%;
     background-color: var(--bright-gold);
-    border: 2px solid var(--light-orange);
+    border: 2px solid var(--bright-gold);
     top: 5%;
   }
   #line2-web {
@@ -1018,7 +1015,7 @@ footer li a {
     width: 100%;
     height: 10%;
     background-color: var(--bright-gold);
-    border: 2px solid var(--light-orange);
+    border: 2px solid var(--bright-gold);
     top: 10%;
   }
   #line3-web {
@@ -1026,7 +1023,7 @@ footer li a {
     width: 100%;
     height: 10%;
     background-color: var(--bright-gold);
-    border: 2px solid var(--light-orange);
+    border: 2px solid var(--bright-gold);
     top: 15%;
   }
   #line4-web {
@@ -1034,7 +1031,7 @@ footer li a {
     width: 215%;
     height: 10%;
     background-color: var(--bright-gold);
-    border: 2px solid var(--light-orange);
+    border: 2px solid var(--bright-gold);
     top: 20%;
   }
 
@@ -1043,7 +1040,7 @@ footer li a {
     width: 215%;
     height: 10%;
     background-color: var(--bright-gold);
-    border: 2px solid var(--light-orange);
+    border: 2px solid var(--bright-gold);
     top: 25%;
   }
 
@@ -1052,14 +1049,13 @@ footer li a {
     width: 215%;
     height: 10%;
     background-color: var(--bright-gold);
-    border: 2px solid var(--light-orange);
+    border: 2px solid var(--bright-gold);
     top: 30%;
   }
 
   .line-web {
     position: absolute;
     background-color: var(--bright-gold);
-    border: 2px solid var(--light-orange);
     transition: transform 2s ease;
     transform: scaleX(0);
   }
@@ -1076,7 +1072,7 @@ footer li a {
     right: 20px;
     height: 400px;
     width: 90%;
-    border: 2px solid var(--light-orange);
+    border: 5px solid var(--bright-gold);
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -1084,8 +1080,7 @@ footer li a {
 
   .cog,
   .cog2 {
-    background-color: var(--bright-gold);
-    border: 2px solid var(--light-orange);
+    background: var(--bright-gold);
     border-radius: 50%;
     position: relative;
     animation: spin 5s linear infinite;
@@ -1135,7 +1130,6 @@ footer li a {
     position: absolute;
     width: 50px;
     height: 50px;
-    border: 2px solid var(--light-orange);
     background: #ecf2ff;
     border-radius: 50%;
     transform: translate(0, 0);
@@ -1157,7 +1151,7 @@ footer li a {
     background-color: transparent;
     height: 400px;
     width: 90%;
-    border: 2px solid var(--light-orange);
+    border: 5px solid var(--bright-gold);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -1169,8 +1163,7 @@ footer li a {
     position: absolute;
     height: 20%;
     width: 5%;
-    background-color: var(--bright-gold);
-    border: 2px solid var(--light-orange);
+    background: var(--bright-gold);
     animation: moveUpAndDown 2s linear infinite;
   }
 
@@ -1185,8 +1178,7 @@ footer li a {
   #game-ball {
     width: 5%;
     height: 5%;
-    background-color: var(--bright-gold);
-    border: 2px solid var(--light-orange);
+    background: var(--bright-gold);
     position: absolute;
     animation: moveBackAndForth 2s linear infinite;
   }
