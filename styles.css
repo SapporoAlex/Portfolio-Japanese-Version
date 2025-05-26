@@ -1,7 +1,8 @@
 /* General Reset and Base Styling */
 :root {
   --main-blue: #00115a;
-  --bright-gold: #fbff00;
+  --bright-gold: #f0f17b;
+  --portfolio-bg: #9bbbff;
 }
 
 html {
@@ -284,7 +285,7 @@ wrapper {
 /* Portfolio Section */
 #portfolio {
   text-align: center;
-  background-color: #ecf2ff;
+  background-color: var(--portfolio-bg);
   padding-bottom: 30px;
 }
 
