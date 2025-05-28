@@ -2,7 +2,7 @@
 :root {
   --main-blue: #00115a;
   --bright-gold: #f0f17b;
-  --portfolio-bg: #9bbbff;
+  --portfolio-bg: #bcd2ff;
 }
 
 html {
@@ -42,6 +42,7 @@ wrapper {
   padding: 0 20px;
   font-size: 20px;
   color: white;
+  font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -858,7 +859,7 @@ footer li a {
   }
 }
 
-/* Small devices (phones, up to 600px) */
+/* Small devices (phones, up to 700px) */
 
 @media (max-width: 700px) {
   /* Animations */
@@ -1193,7 +1194,7 @@ footer li a {
   }
 
   #nav-bar p {
-    font-size: 16px;
+    font-size: 14px;
     margin: 5px;
     padding: 0;
   }
@@ -1365,20 +1366,4 @@ footer li a {
     font-size: xx-large;
     gap: 20px;
   }
-
-  /* .bar-anim {
-    display: none;
-  } */
-
-  /* #web-anim {
-    display: none;
-  } */
-
-  /* #data-anim {
-    display: none;
-  } */
-  /* 
-  #software-anim {
-    display: none;
-  } */
 }
