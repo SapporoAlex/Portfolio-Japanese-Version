@@ -5,6 +5,10 @@
   --portfolio-bg: #bcd2ff;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   padding: 0;
   margin: 0;
